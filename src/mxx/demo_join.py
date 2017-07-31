@@ -4,9 +4,10 @@ num = ["num1", "num2", "num3"]
 liebiao= ["l1","l2","l3"]
 while i<=3 :
     i=i+1
-print i
-info.insert(2, liebiao[i])
+    print i
 
+info.insert(2, liebiao[2])
+print info
 # info.insert(2,liebiao[0])
 # print info
 #
