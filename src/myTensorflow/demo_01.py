@@ -27,3 +27,8 @@ with tf.Session() as sess:
         print(sess.run(state))
 
 print("-------------------------")
+def add_layer(inputs, in_size, out_size, activation_function=None):
+    Weights = tf.Variable(tf.random_normal([in_size, out_size]))
+
+
+
