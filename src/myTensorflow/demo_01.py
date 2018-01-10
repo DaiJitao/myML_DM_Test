@@ -28,7 +28,6 @@ with tf.Session() as sess:
 
 print("-------------------------")
 
-v = tf.constant([[1.,2.,3.],[4.,5.0,6,]])
-d = tf.clip_by_value(v, 2.5, 4.5)
-s = d.eval()
-print(tf.clip_by_value(v, 2.5, 4.5))
+
+def add_layer(inputs, in_size, out_size, activation_function=None):
+    Weights = tf.Variable(tf.random_normal([in_size, out_size]))
