@@ -27,3 +27,8 @@ with tf.Session() as sess:
         print(sess.run(state))
 
 print("-------------------------")
+
+v = tf.constant([[1.,2.,3.],[4.,5.0,6,]])
+d = tf.clip_by_value(v, 2.5, 4.5)
+s = d.eval()
+print(tf.clip_by_value(v, 2.5, 4.5))
