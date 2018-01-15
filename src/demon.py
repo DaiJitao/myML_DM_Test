@@ -40,23 +40,22 @@ zip():并行迭代
 
 
 x = np.random.randn(4,4)
-print "x:"
-print x
+print("x:", x)
 
-print "where(): "
-print np.where(x > 0, 2, -2)
+print ("where(): ")
+print (np.where(x > 0, 2, -2))
 
 xarr = np.array([1.1,1.2,1.3,1.4,1.5])
 yarr = np.array([2.1,2.2,2.3,2.4,2.5])
 is_true = np.array([True,False,True,True,False])
 
-print "xarr:",xarr
-print "yarr:",yarr
-print "is_true",is_true
+print ("xarr:",xarr)
+print ("yarr:",yarr)
+print ("is_true",is_true)
 
 result = np.where(is_true, xarr, yarr)
-print "result:",result
+print ("result:",result)
 
 for i in range(10):
-    print "dai"
+    print("dai")
 
