@@ -1,7 +1,6 @@
 # _*_ coding:utf-8 _*_
 
 import numpy as np
-
 class Perceptron(object):
     """
     eta:float
