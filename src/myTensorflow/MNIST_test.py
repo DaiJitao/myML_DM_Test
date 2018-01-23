@@ -4,7 +4,11 @@ import tensorflow as tf
 
 #加载数据集MNIST
 from tensorflow.examples.tutorials.mnist import input_data
-mnist = input_data.read_data_sets('/tmp/data', one_hot=True)
+mnist = input_data.read_data_sets('E:\\data\\MNIST_data_sets\\', one_hot=True)
+
+print(mnist.train.images.shape, mnist.train.labels.shape)
+print(mnist.test.images.shape, mnist.test.labels.shape)
+print(mnist.validation.images.shape, mnist.validation.labels.shape)
 
 #定义网络超参数
 learning_rate = 0.001
