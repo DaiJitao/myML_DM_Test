@@ -1,6 +1,6 @@
 
 import pandas as pd
-df = pd.read_csv(r'C:\Users\daijitao\Downloads\smsspamcollection',
+df = pd.read_csv(r'C:\Users\daijitao\Downloads\smsspamcollection\SMSSpamCollection.csv',
                  delimiter='\t', header=None)
 
 print(df.head())
