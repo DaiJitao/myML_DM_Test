@@ -37,5 +37,13 @@ class Test():
     def __call__(self, *args, **kwargs):
         print("call me")
 
-t = Test()
-t()
+def decorated_by(func):
+    func.__doc__ += "\nDecorated by decorated_by\n"
+    return func
+
+def add(x, y):
+    """return the sum """
+    return x + y
+
+add = decorated_by(add)
+print(add(12,12))
