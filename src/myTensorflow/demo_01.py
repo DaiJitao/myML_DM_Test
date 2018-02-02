@@ -32,3 +32,25 @@ print("-------------------------")
 def add_layer(inputs, in_size, out_size, activation_function=None):
     Weights = tf.Variable(tf.random_normal([in_size, out_size]))
 
+
+from numpy.random import RandomState
+
+# 定义训练数据
+batch_size = 8
+
+w1 = tf.Variable(tf.random_normal([2,3], stddev=1, seed=1))
+w2 = tf.Variable(tf.random_normal([3,2], stddev=1, seed=1))
+
+x = tf.placeholder(tf.float32, shape=(None, 2), name="x_input")
+y_ = tf.placeholder(tf.float32, shape=(None, 1), name="y_input")
+
+a = tf.matmul(x, w1)
+y = tf.matmul(a, w2)
+
+# 定义损失函数、反向传播算法
+cross_entry = -tf.reduce_sum()
+
+
+rdm = RandomState(1)
+dataSet_size = 128
+X = rdm.rand(dataSet_size, 2)
