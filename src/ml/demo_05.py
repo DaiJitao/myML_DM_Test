@@ -13,6 +13,7 @@ from sklearn.cross_validation import train_test_split
 
 print(df.head(10))
 
+
 X_train_raw, X_test_raw, y_train, y_test = train_test_split(df[1], df[0])
 print(X_train_raw)
 print(X_test_raw)
