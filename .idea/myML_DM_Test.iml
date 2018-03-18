@@ -6,7 +6,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src/test_file" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/src/huochepiao" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 3.6.2 (C:\ProgramData\Anaconda3\python.exe)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python 3.5.2 (D:\Program Files\Anaconda3\python.exe)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
   <component name="TestRunnerService">
