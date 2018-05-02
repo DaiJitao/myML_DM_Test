@@ -59,3 +59,37 @@ print ("result:",result)
 for i in range(10):
     print("dai")
 
+
+print("====================================================================")
+def fib(times):
+    n = 0
+    a,b = 0, 1
+    while n < times:
+        yield b
+        a, b = b, a + b
+        n += 1
+    return "done"
+
+d = fib(5)
+print(d)
+print(next(d))
+for i in d:
+    print(i)
+
+from multiprocessing import Process
+import os
+import time
+def runproc(test):
+    print(os.getpid())
+    time.sleep(20) # 单位是秒
+    # print(test + " is running at id " + os.getpid())
+
+if __name__ == "__main__":
+    print("parent process id " + str(os.getpid()))
+    p = Process(target = runproc, args = ("daijitao",))
+    print("sub process is running, my parent_pid is " + str(os.getpid()))
+    p.start() #
+    p.join() #
+    print("end")
+
+
