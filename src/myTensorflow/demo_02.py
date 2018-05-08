@@ -30,7 +30,39 @@ print("fileName");print(filename)
 
 def read_data(filename):
     with zipfile.ZipFile(filename) as f:
-        data = tf.compat.as_str(f.read(f.namelist()[0])).split()
+        print("f.namelist ", f.namelist()) # f.namelist zip文件中的列表，
+        data = tf.compat.as_str(f.read(f.namelist()[0])).split() # 以空格分
     return data
 
+words = read_data(filename)
+print("data Szie", len(words))
+
+
+vocabulary_size = 50000
+
+def build_dataSet(words):
+    count = [['UNK', -1]]
+    count.extend(collections.Counter(words).most_common(vocabulary_size - 1))
+    dictionary = dict()
+    print("Count ", count)
+    for word, _ in count:
+        dictionary[word] = len(dictionary)
+    data = list()
+    unk_count = 0
+    for word in words:
+        if word in dictionary:
+            index = dictionary[word]
+        else:
+            index = 0
+            unk_count = unk_count + 1
+        data.append(index)
+    count[0][1] = unk_count
+    reverse_dictionary = dict(zip(dictionary.values(), dictionary.keys()))
+    return data, count, dictionary, reverse_dictionary
+
+data, count, dictionary, reverse_dictonary = build_dataSet(words)
+print("data ", data[1])
+del words # 清理内存
+print("Most common words (+UNK)", count[:5])
+print("Sample data", data[:10], [reverse_dictonary[i] for i in data[:10]])
 
