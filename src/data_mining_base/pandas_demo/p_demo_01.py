@@ -4,7 +4,7 @@ import pandas as pd
 from pandas import Series, DataFrame
 
 s = pd.Series([12,-4,7,9], index=['a','b','c','d'])
-print(s)
+print("s\n", s)
 print(s.index)
 print("s.values: ", s.values)
 print(s['a'])
