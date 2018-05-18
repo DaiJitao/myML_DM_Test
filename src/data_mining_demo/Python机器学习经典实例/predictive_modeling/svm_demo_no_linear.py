@@ -39,9 +39,11 @@ from sklearn.svm import SVC
 X_train, X_test, y_train, y_test = cross_validation.train_test_split(X, y, test_size=.25, random_state=5)
 
 # 开始训练
-params = {"kernel": 'linear'}
+# params = {"kernel": 'linear'}
+params = {'kernel': 'poly', 'degree': 3} # 多项式核函数
+params2 = {'kernel': 'rbf'} # 用径向基函数建立非线性分类器
 
-classifier = SVC(**params) # 加入线性核函数, 指明该参数params 为字典，等同于kernet='linear'
+classifier = SVC(**params2) # 加入线性核函数, 指明该参数params 为字典，等同于kernet='linear'
 classifier.fit(X_train, y_train)
 classifier.predict(X_test)
 # 模型效果的指标评价
