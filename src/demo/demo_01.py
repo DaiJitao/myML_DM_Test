@@ -1,10 +1,9 @@
-#coding:utf-8
 
-def add(a,b):
-    """
+import time
 
-    :param a: int
-    :param b: int
-    :return:  int
-    """
-    return a + b
+n = 0
+while True:
+    for i in range(1000000):
+        n += 1
+    time.sleep(1)
+

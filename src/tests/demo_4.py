@@ -1,7 +1,7 @@
 # _*_ coding:utf-8 _*_
 class locker:
     def __init__(self):
-        print "locker.__init__() should be not called."
+        print("locker.__init__() should be not called.")
 
     @staticmethod
     def acquire():
@@ -26,7 +26,7 @@ def deco(cls):
 
 @deco(locker)
 def myfun():
-    print "myfun() called."
+    print("myfun() called.")
 
 myfun()
 

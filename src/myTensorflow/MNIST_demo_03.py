@@ -11,6 +11,7 @@ X = tf.placeholder(tf.float32, [None, 784])
 W = tf.Variable(tf.zeros([784, 10]))
 b = tf.Variable(tf.zeros([10]))
 
+
 y = tf.nn.softmax(tf.matmul(X, W) + b) # 预测的概率分布
 
 ## 定义损害函数
