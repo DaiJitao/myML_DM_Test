@@ -1,6 +1,6 @@
 #coding:utf-8
 
-""" 本实例源自《python数据分析实战》 """
+""" 本实例源自《python_shujufenxishizhan》 """
 
 from sklearn import datasets
 import matplotlib.pyplot as plt

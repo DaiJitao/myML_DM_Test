@@ -38,37 +38,38 @@ zip():并行迭代
     如何只有参数condition，则函数返回为true的元素的坐标位置信息；
 """
 
-
-x = np.random.randn(4,4)
+x = np.random.randn(4, 4)
 print("x:", x)
 
-print ("where(): ")
-print (np.where(x > 0, 2, -2))
+print("where(): ")
+print(np.where(x > 0, 2, -2))
 
-xarr = np.array([1.1,1.2,1.3,1.4,1.5])
-yarr = np.array([2.1,2.2,2.3,2.4,2.5])
-is_true = np.array([True,False,True,True,False])
+xarr = np.array([1.1, 1.2, 1.3, 1.4, 1.5])
+yarr = np.array([2.1, 2.2, 2.3, 2.4, 2.5])
+is_true = np.array([True, False, True, True, False])
 
-print ("xarr:",xarr)
-print ("yarr:",yarr)
-print ("is_true",is_true)
+print("xarr:", xarr)
+print("yarr:", yarr)
+print("is_true", is_true)
 
 result = np.where(is_true, xarr, yarr)
-print ("result:",result)
+print("result:", result)
 
 for i in range(10):
     print("dai")
 
-
 print("====================================================================")
+
+
 def fib(times):
     n = 0
-    a,b = 0, 1
+    a, b = 0, 1
     while n < times:
         yield b
         a, b = b, a + b
         n += 1
     return "done"
+
 
 d = fib(5)
 print(d)
@@ -79,17 +80,59 @@ for i in d:
 from multiprocessing import Process
 import os
 import time
+
+
 def runproc(test):
     print(os.getpid())
-    time.sleep(20) # 单位是秒
+    time.sleep(20)  # 单位是秒
     # print(test + " is running at id " + os.getpid())
 
+
+# if __name__ == "__main__":
+#     print("parent process id " + str(os.getpid()))
+#     p = Process(target = runproc, args = ("daijitao",))
+#     print("sub process is running, my parent_pid is " + str(os.getpid()))
+#     p.start() #
+#     p.join() #
+#     print("end")
+
+def create_volumes(disks):
+    volumes = []
+    for disk in disks:
+        if "root_disk" in disk and disk["root_disk"] is True:
+            continue
+        else:
+            print("disk：", disk)
+        # volumes.append(volume)
+    return volumes
+
+
 if __name__ == "__main__":
-    print("parent process id " + str(os.getpid()))
-    p = Process(target = runproc, args = ("daijitao",))
-    print("sub process is running, my parent_pid is " + str(os.getpid()))
-    p.start() #
-    p.join() #
-    print("end")
+    dict_1 = {}
+    dict_1["name"] = "jitao"
+    dict_1["age"] = 20
+    dict_1["addr"] = "ctsi"
+    result = None
+    dict_1.update({"name": "yanzheng"})
+    addr = dict_1.get("addr", None)
+    # dict_1.append({"grade": "g1"})
+    result = "name=" + str(dict_1["name"]) + ",age=" + str(dict_1["age"]) + ",addr=" + str(addr)
+    print(result)
+    disks = [
+        {
+		"instanceUuid": "265df3a8-af14-4251-9157-6fca1ae1029c",
+         "name": "test2-i-0000004E-xvde",
+         "diskuuid": "e1eb5364-98ac-4456-a601-56a9e4f49585",
+         "disktype": "thick",
+         "cluster_name": "autoDS1",
+         "diskpath": "urn:sites:4B760883:datastores:8",
+         "instanceName": "test2",
+         "size": 1048576
+        }]
+    volumes = create_volumes(disks)
+    print(True is True)
+    disk = disks[0]
+    print(disk.get(""))
+
 
 
