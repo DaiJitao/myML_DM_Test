@@ -132,7 +132,7 @@ if __name__ == "__main__":
     volumes = create_volumes(disks)
     print(True is True)
     disk = disks[0]
-    print(disk.get(""))
+    print("diskpath" in disk)
 
 
 

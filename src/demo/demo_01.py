@@ -1,7 +1,20 @@
 import time
+import sys
+def test():
+    n = 0
+    while True:
+        for i in range(1000):
+            n += 1
+        time.sleep(1)
+        if n == 1000:
+            break
+    print("=====>ok")
 
-n = 0
-while True:
-    for i in range(1000000):
-        n += 1
-    time.sleep(1)
+if __name__=="__main__":
+    test()
+    i = sys.exit(test())
+    print(i)
+    print(sys.platform())
+
+
+
