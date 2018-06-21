@@ -1,6 +1,7 @@
 import time
 import sys
 from functools import reduce
+
 def test():
     n = 0
     while True:
