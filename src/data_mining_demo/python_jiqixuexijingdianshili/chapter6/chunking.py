@@ -26,5 +26,9 @@ if __name__=='__main__':
     counter = 0
 
     text_chunks = splitter(data, num_words)
+    count = 0
+    for i in text_chunks:
+        count+=1
+        print(count, i)
     print("text_chunks ", text_chunks)
     print(len(text_chunks))
