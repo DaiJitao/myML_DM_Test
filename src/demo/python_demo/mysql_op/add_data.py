@@ -1,18 +1,12 @@
 import pymysql
 import pymysql.cursors
 import pymysql.connections
+import ConfigParser
+import configparser
 """
 conda install pymysql
 https://www.cnblogs.com/laumians-notes/p/9069498.html
 """
-
-host = 'localhost'
-user = 'root'
-password = 'root'
-db = 'user_info'
-port = 3306
-charset = 'utf8'
-
 
 class DBOperation():
     def __init__(self, host=host, user=user, pwd=password, db=db, port=port, charset=charset):
@@ -31,11 +25,12 @@ class DBOperation():
                 cout_1 = cursor.execute(sql_1)
                 print("总数量： " + str(cout_1))
                 temp = cursor.fetchall()
-                print("temp : ", temp)
+                print("temp: ", temp)
                 for row in temp:
                     # print(row)
-                    print("id:", row[0], '  用户名;', row[1], '  账户类型;', row[2], "  密码;", row[3], '  密保手机;', row[4],
-                          '  密保邮箱;', row[5], '  密保问题;', row[6])
+                    print("id:", row[0],'账号顺序', row[1], '  用户名;', row[2], '  账户类型;', row[3], "  密码;", row[4],
+                          '  密保手机;', row[5],
+                          '  密保邮箱;', row[6], '  密保问题;', row[7])
         except Exception as e:
             print(e)
             # finally:
@@ -67,6 +62,7 @@ class DBOperation():
             connect.rollback()
 
     def delete_data(self):
+        print("执行删除任务，删除所有数据")
         connect = self.connection
         # 使用cursor()方法获取操作游标
         cursor = connect.cursor()
@@ -75,8 +71,11 @@ class DBOperation():
         try:
             # 执行sql语句
             result = cursor.execute(sql_delete)
-            print("result ", result)
+            if result >= 0:
+                print("删除成功，删除" + str(result) + "行数据")
             # 提交到数据库执行
+            else:
+                print("删除失败！任务已经回滚。")
             connect.commit()
         except:
             # 发生错误时回滚
@@ -84,8 +83,7 @@ class DBOperation():
 
     def __del__(self):
         print("\n\n\n数据库连接开始关闭...")
-        self.connection.close()
-        print(type(self.connection))
+        result = self.connection.close()
         print("数据库连接已经关闭")
 
 class UserName():
@@ -117,9 +115,14 @@ def username(obj):
 
 db = DBOperation()
 data = UserName()
-data.account_order="test"
-data.username="dai"
-db.insert_data(data)
+data.type = '126邮箱'
+data.account_order = "126邮箱"
+data.username = 'disigebaiduzhangh@126.com'
+data.pwd = 'bdwpdjt~~~'
+data.secret_mail = ''
+data.secret_cell_phone = ''
+data.security_question = ''
+# db.insert_data(data)
 # print("=============")
 # db.print_data()
 # print("=============")

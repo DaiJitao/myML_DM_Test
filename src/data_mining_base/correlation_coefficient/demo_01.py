@@ -1,3 +1,4 @@
+#coding:utf-8
 import numpy as np
 from sklearn.preprocessing import StandardScaler
 from scipy.stats import pearsonr
