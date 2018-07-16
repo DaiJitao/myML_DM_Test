@@ -1,8 +1,14 @@
 import pymysql
 import pymysql.cursors
 import pymysql.connections
-import ConfigParser
-import configparser
+
+host = 'localhost'
+user = 'root'
+password = 'root'
+db = 'user_info'
+port = 3306
+charset = 'utf8'
+
 """
 conda install pymysql
 https://www.cnblogs.com/laumians-notes/p/9069498.html
@@ -115,10 +121,10 @@ def username(obj):
 
 db = DBOperation()
 data = UserName()
-data.type = '126邮箱'
-data.account_order = "126邮箱"
-data.username = 'disigebaiduzhangh@126.com'
-data.pwd = 'bdwpdjt~~~'
+data.type = 'leetcode'
+data.account_order = "leetcode"
+data.username = ' leetcodedjt'
+data.pwd = ' leetcodedjt___'
 data.secret_mail = ''
 data.secret_cell_phone = ''
 data.security_question = ''
@@ -128,5 +134,5 @@ data.security_question = ''
 # print("=============")
 # db.delete_data()
 print("============")
-# db.print_data()
+db.print_data()
 # 未完待续部分...
