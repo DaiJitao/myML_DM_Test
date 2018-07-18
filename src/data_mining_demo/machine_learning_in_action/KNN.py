@@ -1,7 +1,8 @@
 
 from numpy import *
 import operator
-from common import sort
+from common.sort import sort3 as sort_dict
+from common.sort import sort1 as sort_dict_big2small
 
 def createDateSet():
     """
@@ -36,7 +37,19 @@ def distance(f1, f2):
         return sum_ ** 0.5
 print(distance([4,2], [2,1]) ** 2)
 
-def classify(fdata, dataSet, labels, k):
+def max_label(list_):
+    dict_ = {}
+    for i in list_:
+        if i not in  dict_:
+            dict_[i] = 1
+        else:
+            v = dict_[i]
+            dict_[i] = v + 1
+    print(dict_)
+    data = sort_dict_big2small(dict_)
+    return data[0][0] # dd = data[0]; return dd[0]
+
+def classify(fdata, dataSet, labels, k=3):
     """
     :param fdata: 待预测数据
     :param dataSet:  数据样本
@@ -59,12 +72,16 @@ def classify(fdata, dataSet, labels, k):
             distance_dict[str(i)] = distance_
         print("距离 类别")
         print(distance_dict)
-        class_dict = sort.sort3(distance_dict)
+        class_dict = sort_dict(distance_dict)
+        predict_list = []
         for item in class_dict:
             label = labels[int(item[1])]
             print(item[0], label)
+            predict_list.append(label)
+        return max_label(predict_list[:k])
 
-classify([0, 0], dataSet=group, labels=labels, k=7)
+pp = classify([0, 0], dataSet=group, labels=labels, k=3)
+print("pp-->", pp)
 
 
 
