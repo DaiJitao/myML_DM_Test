@@ -7,7 +7,6 @@ arrow_args = dict(arrowstyle="<-")
 
 def plotNode(nodeTxt, centerPt, parentPt, nodeType):
     """
-
     :param nodeTxt: 注释
     :param centerPt: 箭头终止位置
     :param parentPt: 箭头起始位置
