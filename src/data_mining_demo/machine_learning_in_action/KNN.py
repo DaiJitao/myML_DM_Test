@@ -1,6 +1,5 @@
 
 from numpy import *
-import operator
 from common.sort import sort3 as sort_dict
 from common.sort import sort1 as sort_dict_big2small
 
