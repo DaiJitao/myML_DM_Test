@@ -1,5 +1,4 @@
-﻿#-*- coding: utf-8 -*-
-def cm_plot(y, yp):
+﻿def cm_plot(y, yp):
   
   from sklearn.metrics import confusion_matrix #导入混淆矩阵函数
 

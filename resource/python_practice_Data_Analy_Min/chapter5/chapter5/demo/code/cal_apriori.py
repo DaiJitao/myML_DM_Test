@@ -1,4 +1,4 @@
-#-*- coding: utf-8 -*-
+﻿#-*- coding: utf-8 -*-
 #使用Apriori算法挖掘菜品订单关联规则
 from __future__ import print_function
 import pandas as pd
