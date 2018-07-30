@@ -121,14 +121,14 @@ def username(obj):
 
 db = DBOperation()
 data = UserName()
-data.type = 'leetcode'
-data.account_order = "leetcode"
-data.username = ' leetcodedjt'
-data.pwd = ' leetcodedjt___'
+data.type = '电信邮箱'
+data.account_order = "电信邮箱"
+data.username = 'daijitao'
+data.pwd = 'zgdxDjt6701___'
 data.secret_mail = ''
 data.secret_cell_phone = ''
 data.security_question = ''
-# db.insert_data(data)
+db.insert_data(data)
 # print("=============")
 # db.print_data()
 # print("=============")
