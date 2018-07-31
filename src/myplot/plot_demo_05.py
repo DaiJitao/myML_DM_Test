@@ -6,7 +6,7 @@ from common.figure_style import Figure_Style
 
 
 x = np.linspace(0, 8, 100)
-x = np.linspace(0, 10, 50)
+x = np.linspace(0, 10, 1000)
 
 def demo1(data):
     dy = 0.8
@@ -33,7 +33,34 @@ def demo3():
         axi.set(xticks=[], yticks=[])
     plt.show()
 
+def demo4():
+    fig, ax = plt.subplots()
+    ax.plot(x, np.sin(x), '-b', label='sine')
+    ax.plot(x, np.cos(x), '--k', label='Cosine')
+    ax.axis('equal')
+    leg = ax.legend()
+    plt.show()
+
+def demo6():
+    fig, ax = plt.subplots()
+    ax.plot(x, np.sin(x), '-b', label='sine')
+    ax.plot(x, np.cos(x), '--k', label='Cosine')
+    ax.axis('equal')
+    leg = ax.legend(loc='upper left', frameon=False) # 取消外边框
+    plt.show()
+
+def demo5():
+    fig, ax = plt.subplots()
+    ax.plot(x, np.sin(x), '-b', label='sine')
+    ax.plot(x, np.cos(x), '--k', label='Cosine')
+    ax.axis('equal')
+    leg = ax.legend(loc='lower center', ncol=2, frameon=False) # 取消外边框
+    plt.show()
+
 if __name__ == "__main__":
+    styles = [0, 1]
+    type__ = Figure_Style(0)
+    demo5()
     type__ = Figure_Style(1)
-    demo3()
+    demo5()
 
