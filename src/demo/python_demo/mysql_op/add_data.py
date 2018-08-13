@@ -39,17 +39,14 @@ class DBOperation():
                           '  密保邮箱;', row[6], '  密保问题;', row[7])
         except Exception as e:
             print(e)
-            # finally:
-            #     self.connection.close()
 
     def insert_data(self, data):
         if data is None or data is "":
             print("插入数据不能为空")
             return
         data = username(data)
-        connect = self.connection
         # 使用cursor()方法获取操作游标
-        cursor = connect.cursor()
+        cursor = self.connection.cursor()
 
         # SQL 插入语句
         sql_insert = \
@@ -61,7 +58,7 @@ class DBOperation():
             result = cursor.execute(sql_insert)
             print("result ", result)
             # 提交到数据库执行
-            connect.commit()
+            self.connection.commit()
         except Exception as e:
             raise Exception
             # 发生错误时回滚
@@ -69,10 +66,8 @@ class DBOperation():
 
     def delete_data(self):
         print("执行删除任务，删除所有数据")
-        connect = self.connection
         # 使用cursor()方法获取操作游标
-        cursor = connect.cursor()
-
+        cursor = self.connection.cursor()
         sql_delete = "delete from usernames"
         try:
             # 执行sql语句
@@ -82,10 +77,10 @@ class DBOperation():
             # 提交到数据库执行
             else:
                 print("删除失败！任务已经回滚。")
-            connect.commit()
+            self.connection.commit()
         except:
             # 发生错误时回滚
-            connect.rollback()
+            self.connection.rollback()
 
     def __del__(self):
         print("\n\n\n数据库连接开始关闭...")
@@ -121,14 +116,14 @@ def username(obj):
 
 db = DBOperation()
 data = UserName()
-data.type = '电信邮箱'
-data.account_order = "电信邮箱"
-data.username = 'daijitao'
-data.pwd = 'zgdxDjt6701___'
-data.secret_mail = ''
+data.type = '华为账号'
+data.account_order = "手机的华为账号"
+data.username = '17718475615'
+data.pwd = 'hwdjt___'
+data.secret_mail = '976185561'
 data.secret_cell_phone = ''
 data.security_question = ''
-db.insert_data(data)
+# db.insert_data(data)
 # print("=============")
 # db.print_data()
 # print("=============")
