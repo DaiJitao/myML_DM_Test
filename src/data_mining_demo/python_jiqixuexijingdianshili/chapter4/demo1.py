@@ -66,5 +66,5 @@ plt.show()
 
 
 
-
+np.a
 
