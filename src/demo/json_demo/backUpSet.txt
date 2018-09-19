@@ -1,0 +1,663 @@
+﻿{
+  "subClientProperties": [{
+    "proxyClient": {
+
+    },
+    "subClientEntity": {
+      "clientName": "192.168.56.128",
+      "instanceName": "VMware",
+      "backupsetId": 7,
+      "_type_": 7,
+      "instanceId": 3,
+      "subclientGUID": "35732843-2935-48F0-9BD0-6A3ECEEA3EEC",
+      "subclientId": 6,
+      "clientId": 4,
+      "appName": "Virtual Server",
+      "backupsetName": "defaultBackupSet",
+      "applicationId": 106,
+      "subclientName": "default"
+    },
+    "dfsSubclientProp": {
+
+    },
+    "planEntity": {
+
+    },
+    "cassandraProps": {
+
+    },
+    "analyticsSubclientProp": {
+
+    }
+  }, {
+    "proxyClient": {
+
+    },
+    "subClientEntity": {
+      "clientName": "192.168.56.128",
+      "instanceName": "VMware",
+      "backupsetId": 7,
+      "_type_": 7,
+      "instanceId": 3,
+      "subclientGUID": "91155304-479B-41E5-A698-E3DC5827CC54",
+      "subclientId": 9,
+      "clientId": 4,
+      "appName": "Virtual Server",
+      "backupsetName": "defaultBackupSet",
+      "applicationId": 106,
+      "subclientName": "data"
+    },
+    "dfsSubclientProp": {
+
+    },
+    "planEntity": {
+
+    },
+    "cassandraProps": {
+
+    },
+    "analyticsSubclientProp": {
+
+    }
+  }, {
+    "proxyClient": {
+
+    },
+    "subClientEntity": {
+      "clientName": "192.168.56.128",
+      "instanceName": "VMware",
+      "backupsetId": 8,
+      "_type_": 7,
+      "instanceId": 3,
+      "subclientGUID": "2545AEA9-B62A-47ED-ABFA-6B45CA7B0AF2",
+      "subclientId": 10,
+      "clientId": 4,
+      "appName": "Virtual Server",
+      "backupsetName": "CTSI_TEST_BackupSet",
+      "applicationId": 106,
+      "subclientName": "默认"
+    },
+    "dfsSubclientProp": {
+
+    },
+    "planEntity": {
+
+    },
+    "cassandraProps": {
+
+    },
+    "analyticsSubclientProp": {
+
+    }
+  }, {
+    "proxyClient": {
+
+    },
+    "subClientEntity": {
+      "clientName": "192.168.56.128",
+      "instanceName": "VMware",
+      "backupsetId": 7,
+      "_type_": 7,
+      "instanceId": 3,
+      "subclientGUID": "A5190805-A14A-4836-A991-1B061AFB1575",
+      "subclientId": 11,
+      "clientId": 4,
+      "appName": "Virtual Server",
+      "backupsetName": "defaultBackupSet",
+      "applicationId": 106,
+      "subclientName": "test_instanceUUID"
+    },
+    "dfsSubclientProp": {
+
+    },
+    "planEntity": {
+
+    },
+    "cassandraProps": {
+
+    },
+    "analyticsSubclientProp": {
+
+    }
+  }, {
+    "proxyClient": {
+
+    },
+    "subClientEntity": {
+      "clientName": "192.168.56.128",
+      "instanceName": "VMware",
+      "backupsetId": 9,
+      "_type_": 7,
+      "instanceId": 3,
+      "subclientGUID": "0DD6E2D2-7E0F-46D3-AEFB-59432826D657",
+      "subclientId": 15,
+      "clientId": 4,
+      "appName": "Virtual Server",
+      "backupsetName": "wzs_test",
+      "applicationId": 106,
+      "subclientName": "test"
+    },
+    "dfsSubclientProp": {
+
+    },
+    "planEntity": {
+
+    },
+    "cassandraProps": {
+
+    },
+    "analyticsSubclientProp": {
+
+    }
+  }, {
+    "proxyClient": {
+
+    },
+    "subClientEntity": {
+      "clientName": "192.168.56.128",
+      "instanceName": "VMware",
+      "backupsetId": 16,
+      "_type_": 7,
+      "instanceId": 3,
+      "subclientGUID": "ECD2A0D9-C585-4C2D-9A82-352C24CFFD89",
+      "subclientId": 30,
+      "clientId": 4,
+      "appName": "Virtual Server",
+      "backupsetName": "djt_test_backupSet",
+      "applicationId": 106,
+      "subclientName": "默认"
+    },
+    "dfsSubclientProp": {
+
+    },
+    "planEntity": {
+
+    },
+    "cassandraProps": {
+
+    },
+    "analyticsSubclientProp": {
+
+    }
+  }, {
+    "proxyClient": {
+
+    },
+    "subClientEntity": {
+      "clientName": "192.168.56.128",
+      "instanceName": "VMware",
+      "backupsetId": 16,
+      "_type_": 7,
+      "instanceId": 3,
+      "subclientGUID": "2C787387-64AC-41AE-B8EA-40CE9C7611E9",
+      "subclientId": 32,
+      "clientId": 4,
+      "appName": "Virtual Server",
+      "backupsetName": "djt_test_backupSet",
+      "applicationId": 106,
+      "subclientName": "DJT_SUBCLIENT"
+    },
+    "dfsSubclientProp": {
+
+    },
+    "planEntity": {
+
+    },
+    "cassandraProps": {
+
+    },
+    "analyticsSubclientProp": {
+
+    }
+  }, {
+    "proxyClient": {
+
+    },
+    "subClientEntity": {
+      "clientName": "192.168.56.128",
+      "instanceName": "VMware",
+      "backupsetId": 17,
+      "_type_": 7,
+      "instanceId": 3,
+      "subclientGUID": "8B1729BF-84BD-4C29-AFB8-695F01106933",
+      "subclientId": 33,
+      "clientId": 4,
+      "appName": "Virtual Server",
+      "backupsetName": "CTSI_TEST_DJT_BackupSet",
+      "applicationId": 106,
+      "subclientName": "default"
+    },
+    "dfsSubclientProp": {
+
+    },
+    "planEntity": {
+
+    },
+    "cassandraProps": {
+
+    },
+    "analyticsSubclientProp": {
+
+    }
+  }, {
+    "proxyClient": {
+
+    },
+    "subClientEntity": {
+      "clientName": "192.168.56.128",
+      "instanceName": "VMware",
+      "backupsetId": 17,
+      "_type_": 7,
+      "instanceId": 3,
+      "subclientGUID": "8EDC2609-FED3-475F-BD65-778DD4EA0BFB",
+      "subclientId": 35,
+      "clientId": 4,
+      "appName": "Virtual Server",
+      "backupsetName": "CTSI_TEST_DJT_BackupSet",
+      "applicationId": 106,
+      "subclientName": "mydata_test001"
+    },
+    "dfsSubclientProp": {
+
+    },
+    "planEntity": {
+
+    },
+    "cassandraProps": {
+
+    },
+    "analyticsSubclientProp": {
+
+    }
+  }, {
+    "proxyClient": {
+
+    },
+    "subClientEntity": {
+      "clientName": "192.168.56.128",
+      "instanceName": "VMware",
+      "backupsetId": 16,
+      "_type_": 7,
+      "instanceId": 3,
+      "subclientGUID": "895AF8DE-C7A8-4D35-A0D0-279CD4F77D26",
+      "subclientId": 39,
+      "clientId": 4,
+      "appName": "Virtual Server",
+      "backupsetName": "djt_test_backupSet",
+      "applicationId": 106,
+      "subclientName": "subclient1"
+    },
+    "dfsSubclientProp": {
+
+    },
+    "planEntity": {
+
+    },
+    "cassandraProps": {
+
+    },
+    "analyticsSubclientProp": {
+
+    }
+  }, {
+    "proxyClient": {
+
+    },
+    "subClientEntity": {
+      "clientName": "192.168.56.128",
+      "instanceName": "VMware",
+      "backupsetId": 7,
+      "_type_": 7,
+      "instanceId": 3,
+      "subclientGUID": "709E8C36-3D23-49DD-AA96-6C5D7B8F6BE9",
+      "subclientId": 40,
+      "clientId": 4,
+      "appName": "Virtual Server",
+      "backupsetName": "defaultBackupSet",
+      "applicationId": 106,
+      "subclientName": "commvault-test001"
+    },
+    "dfsSubclientProp": {
+
+    },
+    "planEntity": {
+
+    },
+    "cassandraProps": {
+
+    },
+    "analyticsSubclientProp": {
+
+    }
+  }, {
+    "proxyClient": {
+
+    },
+    "subClientEntity": {
+      "clientName": "192.168.56.128",
+      "instanceName": "VMware",
+      "backupsetId": 17,
+      "_type_": 7,
+      "instanceId": 3,
+      "subclientGUID": "8CA0DAE4-347D-4625-B205-DE25C1F965D4",
+      "subclientId": 44,
+      "clientId": 4,
+      "appName": "Virtual Server",
+      "backupsetName": "CTSI_TEST_DJT_BackupSet",
+      "applicationId": 106,
+      "subclientName": "myDataTestVM002"
+    },
+    "dfsSubclientProp": {
+
+    },
+    "planEntity": {
+
+    },
+    "cassandraProps": {
+
+    },
+    "analyticsSubclientProp": {
+
+    }
+  }, {
+    "proxyClient": {
+
+    },
+    "subClientEntity": {
+      "clientName": "192.168.56.128",
+      "instanceName": "VMware",
+      "backupsetId": 17,
+      "_type_": 7,
+      "instanceId": 3,
+      "subclientGUID": "CA14ECC2-5EE0-4FAB-B46A-D393AC6070FB",
+      "subclientId": 45,
+      "clientId": 4,
+      "appName": "Virtual Server",
+      "backupsetName": "CTSI_TEST_DJT_BackupSet",
+      "applicationId": 106,
+      "subclientName": "subclient001"
+    },
+    "dfsSubclientProp": {
+
+    },
+    "planEntity": {
+
+    },
+    "cassandraProps": {
+
+    },
+    "analyticsSubclientProp": {
+
+    }
+  }, {
+    "proxyClient": {
+
+    },
+    "subClientEntity": {
+      "clientName": "192.168.56.128",
+      "instanceName": "VMware",
+      "backupsetId": 17,
+      "_type_": 7,
+      "instanceId": 3,
+      "subclientGUID": "3A5747EC-F03E-4DB8-A5EB-2E2BDDEA2676",
+      "subclientId": 51,
+      "clientId": 4,
+      "appName": "Virtual Server",
+      "backupsetName": "CTSI_TEST_DJT_BackupSet",
+      "applicationId": 106,
+      "subclientName": "subclienttest002"
+    },
+    "dfsSubclientProp": {
+
+    },
+    "planEntity": {
+
+    },
+    "cassandraProps": {
+
+    },
+    "analyticsSubclientProp": {
+
+    }
+  }, {
+    "proxyClient": {
+
+    },
+    "subClientEntity": {
+      "clientName": "192.168.56.128",
+      "instanceName": "VMware",
+      "backupsetId": 17,
+      "_type_": 7,
+      "instanceId": 3,
+      "subclientGUID": "A59E0866-4EAF-461C-88F4-4F147245E198",
+      "subclientId": 52,
+      "clientId": 4,
+      "appName": "Virtual Server",
+      "backupsetName": "CTSI_TEST_DJT_BackupSet",
+      "applicationId": 106,
+      "subclientName": "subclienttest003"
+    },
+    "dfsSubclientProp": {
+
+    },
+    "planEntity": {
+
+    },
+    "cassandraProps": {
+
+    },
+    "analyticsSubclientProp": {
+
+    }
+  }, {
+    "proxyClient": {
+
+    },
+    "subClientEntity": {
+      "clientName": "192.168.56.128",
+      "instanceName": "VMware",
+      "backupsetId": 17,
+      "_type_": 7,
+      "instanceId": 3,
+      "subclientGUID": "FCBBBD7D-B271-4A97-96D9-BA16733A038D",
+      "subclientId": 54,
+      "clientId": 4,
+      "appName": "Virtual Server",
+      "backupsetName": "CTSI_TEST_DJT_BackupSet",
+      "applicationId": 106,
+      "subclientName": "subclienttest004"
+    },
+    "dfsSubclientProp": {
+
+    },
+    "planEntity": {
+
+    },
+    "cassandraProps": {
+
+    },
+    "analyticsSubclientProp": {
+
+    }
+  }, {
+    "proxyClient": {
+
+    },
+    "subClientEntity": {
+      "clientName": "192.168.56.128",
+      "instanceName": "VMware",
+      "backupsetId": 7,
+      "_type_": 7,
+      "instanceId": 3,
+      "subclientGUID": "B2C334B8-05F2-47FB-BF8B-117A6E379C0D",
+      "subclientId": 55,
+      "clientId": 4,
+      "appName": "Virtual Server",
+      "backupsetName": "defaultBackupSet",
+      "applicationId": 106,
+      "subclientName": "comvault-test002"
+    },
+    "dfsSubclientProp": {
+
+    },
+    "planEntity": {
+
+    },
+    "cassandraProps": {
+
+    },
+    "analyticsSubclientProp": {
+
+    }
+  }, {
+    "proxyClient": {
+
+    },
+    "subClientEntity": {
+      "clientName": "192.168.56.128",
+      "instanceName": "VMware",
+      "backupsetId": 24,
+      "_type_": 7,
+      "instanceId": 3,
+      "subclientGUID": "26D38639-BD22-4EA8-942F-D8B55FCFFD4F",
+      "subclientId": 56,
+      "clientId": 4,
+      "appName": "Virtual Server",
+      "backupsetName": "djt_ackupSet01",
+      "applicationId": 106,
+      "subclientName": "default"
+    },
+    "dfsSubclientProp": {
+
+    },
+    "planEntity": {
+
+    },
+    "cassandraProps": {
+
+    },
+    "analyticsSubclientProp": {
+
+    }
+  }, {
+    "proxyClient": {
+
+    },
+    "subClientEntity": {
+      "clientName": "192.168.56.128",
+      "instanceName": "VMware",
+      "backupsetId": 25,
+      "_type_": 7,
+      "instanceId": 3,
+      "subclientGUID": "E9D1605A-030E-4A74-9F99-72659832F914",
+      "subclientId": 58,
+      "clientId": 4,
+      "appName": "Virtual Server",
+      "backupsetName": "djt_ackupSet02_true",
+      "applicationId": 106,
+      "subclientName": "default"
+    },
+    "dfsSubclientProp": {
+
+    },
+    "planEntity": {
+
+    },
+    "cassandraProps": {
+
+    },
+    "analyticsSubclientProp": {
+
+    }
+  }, {
+    "proxyClient": {
+
+    },
+    "subClientEntity": {
+      "clientName": "192.168.56.128",
+      "instanceName": "VMware",
+      "backupsetId": 26,
+      "_type_": 7,
+      "instanceId": 3,
+      "subclientGUID": "658DB7A8-E45A-4716-B1AE-C14095773884",
+      "subclientId": 59,
+      "clientId": 4,
+      "appName": "Virtual Server",
+      "backupsetName": "djt_ackupSet03",
+      "applicationId": 106,
+      "subclientName": "default"
+    },
+    "dfsSubclientProp": {
+
+    },
+    "planEntity": {
+
+    },
+    "cassandraProps": {
+
+    },
+    "analyticsSubclientProp": {
+
+    }
+  }, {
+    "proxyClient": {
+
+    },
+    "subClientEntity": {
+      "clientName": "192.168.56.128",
+      "instanceName": "VMware",
+      "backupsetId": 27,
+      "_type_": 7,
+      "instanceId": 3,
+      "subclientGUID": "CB99B966-0AAD-479E-B260-15BFC0F3BCB9",
+      "subclientId": 61,
+      "clientId": 4,
+      "appName": "Virtual Server",
+      "backupsetName": "djt_ackupSet04",
+      "applicationId": 106,
+      "subclientName": "default"
+    },
+    "dfsSubclientProp": {
+
+    },
+    "planEntity": {
+
+    },
+    "cassandraProps": {
+
+    },
+    "analyticsSubclientProp": {
+
+    }
+  }, {
+    "proxyClient": {
+
+    },
+    "subClientEntity": {
+      "clientName": "192.168.56.128",
+      "instanceName": "VMware",
+      "backupsetId": 27,
+      "_type_": 7,
+      "instanceId": 3,
+      "subclientGUID": "3DB9ACBB-80B5-412A-990F-5A8A5F30C130",
+      "subclientId": 62,
+      "clientId": 4,
+      "appName": "Virtual Server",
+      "backupsetName": "djt_ackupSet04",
+      "applicationId": 106,
+      "subclientName": "默认"
+    },
+    "dfsSubclientProp": {
+
+    },
+    "planEntity": {
+
+    },
+    "cassandraProps": {
+
+    },
+    "analyticsSubclientProp": {
+
+    }
+  }]
+}
