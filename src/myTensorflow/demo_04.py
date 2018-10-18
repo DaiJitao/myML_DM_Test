@@ -1,5 +1,5 @@
 
-<<<<<<< HEAD
+
 #coding:utf-8
 import numpy as np
 
@@ -40,7 +40,7 @@ q2 = (.8, .1, .1)
 
 print("a ", cross_entropy(p, q1))
 print("b ", cross_entropy(p, q2))
-=======
+
 import numpy
 import numpy as np
 import tensorflow as tf
@@ -127,5 +127,5 @@ with tf.Session() as sess:
 
     training_cost = sess.run(cost, feed_dict={X: train_X, Y: train_Y})
     print("Training cost=", training_cost, "W=", sess.run(W), "b=", sess.run(b), '\n')
->>>>>>> origin/master
+
 
