@@ -49,6 +49,7 @@ sess.close()
 learning_rate = 0.02
 training_epochs = 3000
 display_step=50
+lamda = .008
 #
 train_X = numpy.asarray([3.3,4.4,5.5,6.71,6.93,4.168,9.779,6.182,7.59,2.167,
                          7.042,10.791,5.313,7.997,5.654,9.27,3.1])
@@ -67,7 +68,11 @@ pred = tf.add(tf.multiply(X, W), b)
 
 cost = tf.reduce_sum(tf.pow(pred-Y, 2))/(2*n_samples) # 可以加上正则化
 
-optimizer = tf.train.GradientDescentOptimizer(learning_rate=learning_rate).minimize(cost)
+
+loss = tf.add(cost, tf.multiply(tf.sqrt(tf.reduce_sum(tf.square(W))), lamda))
+
+
+optimizer = tf.train.GradientDescentOptimizer(learning_rate=learning_rate).minimize(loss=loss)
 
 init = tf.global_variables_initializer()
 
@@ -80,9 +85,9 @@ with tf.Session() as sess:
 
             # Display logs per epoch step
         if (epoch + 1) % display_step == 0:
-            c = sess.run(cost, feed_dict={X: train_X, Y: train_Y})
+            c = sess.run(loss, feed_dict={X: train_X, Y: train_Y})
             print("Epoch:", '%04d' % (epoch + 1), "cost=", "{:.9f}".format(c),"W=", sess.run(W), "b=", sess.run(b))
 
-    training_cost = sess.run(cost, feed_dict={X: train_X, Y: train_Y})
+    training_cost = sess.run(loss, feed_dict={X: train_X, Y: train_Y})
     print("Training cost=", training_cost, "W=", sess.run(W), "b=", sess.run(b), '\n')
 
