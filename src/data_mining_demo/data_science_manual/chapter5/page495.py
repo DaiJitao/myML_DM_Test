@@ -7,14 +7,5 @@ print(dh)
 sns.set()
 dd = sns.pairplot(iris, hue='species', size=5)
 
-
-class A():
-
-    d = 12
-    a = 11
-
-    def test(self):
-        print(d)
-
-a = A()
-a.test()
+import matplotlib.pylab as plt
+import numpy as np
