@@ -14,7 +14,7 @@ save_file_path = 'E:\pycharm_workspace\myML_DM_Test\src\common\webspider'
 
 def get_url(book_name):
     search_text = parse.quote(book_name)
-    url = "https://book.douban.com/subject_search?search_text=" + search_text+  "&cat=1001"
+    url = "https://book.douban.com/subject_search?search_text=" + search_text +  "&cat=1001"
     return url
 
 
