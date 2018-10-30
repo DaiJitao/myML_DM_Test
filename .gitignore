@@ -40,8 +40,5 @@ target-eclipse
 *.egg-info/
 .project
 *.class
-.idea/misc.xml
-.idea/myML_DM_Test.iml
-.idea/workspace.xml
-.idea/myML_DM_Test.iml
-.idea/misc.xml
+.idea/
+
