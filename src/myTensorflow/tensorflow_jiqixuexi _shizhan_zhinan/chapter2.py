@@ -143,7 +143,7 @@ with tf.Session() as  sess:
             temp_loss = sess.run(xentroy, feed_dict={x2_data: x2_vals, x1_data:x1_vals, y_target:y_vals})
             pramas_A = sess.run(A)
             pramas_b = sess.run(b)
-            print "loss=", temp_loss, " A=", pramas_A, " b=", pramas_b
+            print ("loss=", temp_loss, " A=", pramas_A, " b=", pramas_b)
             loss_batch.append(temp_loss)
 
 
@@ -193,8 +193,7 @@ with tf.Session() as  sess:
             temp_loss = sess.run(xentroy, feed_dict={x2_data: x2_vals, x1_data:x1_vals, y_target:y_vals})
             pramas_A = sess.run(A)
             pramas_b = sess.run(b)
-            print"loss=", str(temp_loss), " A=", str(pramas_A), " b=", str(pramas_b)
-            print "\n"
+            print("loss=", str(temp_loss), " A=", str(pramas_A), " b=", str(pramas_b))
             loss_batch.append(temp_loss[0, 0])
             A_batch.append(pramas_A[0, 0])
             b_batch.append(pramas_b[0, 0])
@@ -207,6 +206,9 @@ plt.plot(x, b_batch, "bs-", label="b_batch")
 plt.legend()
 plt.show()
 """ end  """
+
+tf.nn.conv2d(x_data, filter=[], strides=[], padding='', name='')
+tf.nn.max_pool()
 
 
 
