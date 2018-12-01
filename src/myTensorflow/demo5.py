@@ -1,6 +1,6 @@
 import tensorflow as tf
 
-config = tf.ConfigProto(allow_soft_placement=True, log_device_placement=True)
+config = tf.ConfigProto(allow_soft_placement=True, log_device_placement=False)
 
 
 w1 = tf.Variable(tf.random_normal([2, 3], stddev=2, seed=1))
