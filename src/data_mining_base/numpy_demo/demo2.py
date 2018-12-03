@@ -18,3 +18,17 @@ S = np.array([[3, 4], [3, 2]])
 print("===========")
 print(np.linalg.eigvals(T))
 print(np.linalg.eigvals(S))
+
+p = np.array([[3/4, 1/4, 0],
+              [1/4, 1/2, 1/4],
+              [0, 3/4, 1/4]])
+data = p
+for i in  range(10):
+    data *= p
+
+print("================")
+print(data)
+
+for i in  range(10):
+    data *= p
+print(data)
