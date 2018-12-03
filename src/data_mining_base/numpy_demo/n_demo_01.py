@@ -52,6 +52,28 @@ def heye_loss(out_layer_list):
     return result / N
 
 import matplotlib.pyplot as plt
-x = range(-11, 20)
+x = np.linspace(-5, 3, 100)
 y = heye_loss(x)
 print(y)
+
+def tanh(x):
+    tmp1 = np.exp(x)
+    tmp2 = np.exp(-x)
+    return (tmp1 - tmp2) / (tmp1 + tmp2)
+
+def ELU(x, lamda):
+    if x >= 0:
+        return x
+    else:
+        return lamda * (np.exp(x) - 1)
+y1 = [tanh(i) for i in x]
+y2 = [ELU(i, 1) for i in x]
+y3 = [ELU(i, 8) for i in x]
+y4 = [ELU(i, .008) for i in x]
+plt.plot(x, y1, label=('tanh(x)'))
+plt.plot(x, y2, label=('ELU(x, 1)'))
+plt.plot(x, y3, label=('ELU(x, 8)'))
+plt.plot(x, y4, 'b--' ,label=('ELU(x, .008)'))
+plt.grid(True)
+plt.legend()
+plt.show()

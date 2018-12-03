@@ -14,10 +14,15 @@ def fastFib(n):
         for i in range(n):
             _sum = _sum + i
 
-
+a = 12
 if __name__ == "__main__":
-    r = fib(3)
-    print(r)
+    def print_dd():
+        global a
+        a = 15
+
+    print_dd()
+    print(a)
+
 
 
 
