@@ -25,9 +25,11 @@ def fib(times):
         n += 1
     return "ok done!"
 
+def fun():
+    a = 10
+    b = 20
+    print(locals())
+
 
 if __name__ == "__main__":
-    g = fib(2)
-    print(next(g))
-    print(next(g))
-    d = g.send("tes")
+    fun()
