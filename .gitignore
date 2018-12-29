@@ -41,4 +41,5 @@ target-eclipse
 .project
 *.class
 /.idea/
+/.idea
 
