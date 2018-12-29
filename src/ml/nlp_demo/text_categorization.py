@@ -3,18 +3,17 @@ import os
 import chardet
 
 
-
 class Categorization:
     def __init__(self, stop_file, input_path=None, out_path=None):
         self.stop_words = stop_file
 
         """ 输入路径 """
         if input_path == None:
-            self.input_path = r'E:\pycharm_workspace\myML_DM_Test\resource\nlp_Data\C000008'
+            self.input_path = r'E:\pycharm_workspace\myML_DM_Test\resource\nlp_Data\C000010'
 
         """ 保存路径 """
         if out_path == None:
-            self.out_path = r"E:/data/nlp_data/out_data/c00008"
+            self.out_path = r"E:/data/nlp_data/out_data/c00010"
         isDir = os.path.isdir(self.out_path)  # 判断有没有该路径
         if isDir == False:
             os.makedirs(self.out_path)  # 创建保存路径
@@ -26,8 +25,10 @@ class Categorization:
         :return:
         """
         # 2 分词
-        print("正在分词... ")
         for start in range(10, 2000):
+            if start % 80 == 0:
+                percent = str(int((start / 1999) * 100)) + "%"
+                print("正在分词", percent)
             file_name = "/" + str(start) + ".txt"
             file = self.input_path + "\\" + str(start) + ".txt"
 
@@ -45,8 +46,7 @@ class Categorization:
                         tmp = jieba.cut(line.strip())
                         text_words.extend([i for i in tmp if i not in data])
             except Exception as e:
-                print("文件 " + file_name )
-                print(e)
+                print("文件 " + file_name)
                 raise e
 
             # 保存文件
@@ -56,9 +56,7 @@ class Categorization:
                 f.write(content)
                 # print(content)
 
-        print("分词完毕!")
-
-
+        print("分词完毕 100% !")
 
     def get_stop_words(self):
         """
@@ -73,7 +71,7 @@ class Categorization:
             data.add(" ")
         return data
 
-    def code_detection(self, file, coder = "GB2312"):
+    def code_detection(self, file, coder="GB2312"):
 
         with open(file, 'rb') as f:
             data = f.read()
@@ -83,11 +81,13 @@ class Categorization:
         else:
             return None, chardet.detect(data).values()
 
+    def get_features(self):
+        # 提取特征
+        pass
 
-
-# 提取特征
-
-# 计算特征权值
+    def get_feature_weigths(self):
+        # 计算特征权值
+        pass
 
 # 选择分类模型
 
