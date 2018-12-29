@@ -40,5 +40,5 @@ target-eclipse
 *.egg-info/
 .project
 *.class
-.idea/
+/.idea/
 
