@@ -1,4 +1,7 @@
 
+class Demo():
+    def __call__(self, *args, **kwargs):
+        print("call me")
 
 def fib(n):
     if n == 1 or n == 0:
@@ -20,8 +23,9 @@ if __name__ == "__main__":
         global a
         a = 15
 
-    print_dd()
-    print(a)
+    d = Demo()
+    d()
+
 
 
 
