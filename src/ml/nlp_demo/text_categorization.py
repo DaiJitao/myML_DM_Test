@@ -2,7 +2,6 @@ import jieba
 import os
 import chardet
 
-
 class Categorization:
     def __init__(self, stop_file, input_path=None, out_path=None):
         self.stop_words = stop_file
@@ -10,6 +9,8 @@ class Categorization:
         """ 输入路径 """
         if input_path == None:
             self.input_path = r'E:\pycharm_workspace\myML_DM_Test\resource\nlp_Data\C000010'
+        else:
+            self.input_path = input_path
 
         """ 保存路径 """
         if out_path == None:
@@ -92,6 +93,7 @@ class Categorization:
 # 选择分类模型
 
 if __name__ == "__main__":
-    cat = Categorization("./stop_words.txt")
+    input_path = r'F:\pycharm_workspace\myML_DM_Test\resource\nlp_Data\C000010'
+    cat = Categorization("./stop_words.txt", input_path=input_path)
     data = cat.get_stop_words()
     cat.words_segmentation(data)
