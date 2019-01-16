@@ -30,8 +30,25 @@ def randCent(dataSet, K):
         centroids[:, j] = minJ + rangeJ * random.rand(K, 1)
     return centroids
 
-def KMeans(dataSet, centroids):
-    pass
+def KMeans(dataSet, centroids, distance):
+    rows, cols = dataSet.shape
+    centrids_size = len(centroids)
+    isChangegCentroids = True
+    while isChangegCentroids:
+        result = dict()
+        for row in range(rows): # 计算每个点到质心的距离
+            distances = dict() # 存储距离（0: 12） 0为质心 12为距离
+            vectorA = dataSet[row]
+            for centroid in range(centrids_size): #遍历质心
+                vectorB = dataSet[centroid]
+                dist = distance(vectorA, vectorB)
+                distances[centroid] = dist
+            result[row] = distances
+
+        # 更新质心
+
+
+
 
 
 fileName = r"E:\pycharm_workspace\myML_DM_Test\resource\machineLearningInAction\Ch10\testSet.txt"
@@ -40,6 +57,6 @@ print(dataSet[0])
 print(dataSet)
 dataSet = mat(dataSet)
 
-print(randCent(dataSet, 6))
+print("centorids;", randCent(dataSet, 6))
 
 
