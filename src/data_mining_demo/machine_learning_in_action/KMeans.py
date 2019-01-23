@@ -2,8 +2,8 @@ from numpy import *
 from collections import Counter
 
 
-def loadDateSet(fileName):
-    """ 加载数据"""
+def loadDateSet(fileName, delim = None):
+    """ 加载数据 转为np.mat """
     mat_ = []
     with open(fileName, "r") as file:
         for line in file.readlines():
