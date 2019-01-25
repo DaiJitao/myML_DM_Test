@@ -8,3 +8,4 @@ plt.text(0.66, 0.41, "戴")
 
 plt.show()
 
+import re
