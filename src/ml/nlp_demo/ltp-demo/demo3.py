@@ -1,5 +1,6 @@
 from gensim import corpora, models, similarities
 import collections
+from pprint import pprint  # pretty-printer 优美格式打印
 
 documents = ["Human machine interface for lab abc computer applications",
              "A survey of user opinion of computer system response time",
@@ -93,8 +94,7 @@ def doc_to_vectors(docs, one_time_words, stop_words):
 
 
 mm = doc_to_vectors(documents, one_time_words, stoplist)
-print(mm)
-
+pprint(mm)
 print("\n\n");
 from gensim import models
 tfidf = models.TfidfModel(mm)
