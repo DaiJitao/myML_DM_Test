@@ -5,6 +5,7 @@ from pprint import pprint
 import redis
 import os
 import pickle
+import pymysql
 
 conn = redis.Redis()
 text8 = r"E:\data\nlp_data\text8"
@@ -34,7 +35,7 @@ for word, _ in count:
     va[word] = len(va)
 print(va)
 
-dataFile = "./data.txt"
+dataFile = "./data.djt"
 def build_dataSet(words, all_words_size):
     """
     建立一个只有50000词的词表

@@ -25,4 +25,12 @@ def run_publisher():
         if cout == 5:
             break
 
-run_publisher()
+key = "key"
+print(conn.get(key) == None)
+print(conn.incr(key))
+print(conn.incr(key, 15))
+print(type(conn.set(key, 13)))
+print(int(conn.get(key)))
+print(conn.get(key))
+print(conn.set(key, "daijitao"))
+print(conn.substr(key, 1, 2))

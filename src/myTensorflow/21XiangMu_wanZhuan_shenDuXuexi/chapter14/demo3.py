@@ -1,7 +1,7 @@
 
 import pickle
 
-dataFile = "./data.txt"
+dataFile = "./data.djt"
 
 with open(dataFile, "rb") as f:
     data = pickle.load(f)
