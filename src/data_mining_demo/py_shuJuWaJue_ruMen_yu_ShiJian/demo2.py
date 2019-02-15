@@ -24,8 +24,11 @@ def load_data(file, first_line_isHeader = False):
     return X, Y
 
 X, Y = load_data(data, first_line_isHeader = False)
-x_train, x_test, y_train, y_test = train_test_split(X, Y, test_size=.4, random_state = 11)
+print(X)
+print(Y)
 
+
+x_train, x_test, y_train, y_test = train_test_split(X, Y, test_size=.4, random_state = 11)
 from sklearn.neighbors import KNeighborsClassifier
 
 def model_train(num_k = [5]):
@@ -37,7 +40,7 @@ def model_train(num_k = [5]):
         accuracy = np.mean(y_predict == y_test)
         result.append(accuracy)
     return result
-num_ks = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
+num_ks = range(1, 19)
 result = model_train(num_ks)
 for i in range(len(result)):
     print(" num_k=", num_ks[i], " accuracy=", "{:.11f}".format(result[i]))
