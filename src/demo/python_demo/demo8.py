@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import functools
 
 def show(*args, **kwargs):
@@ -62,7 +62,7 @@ s = School("dai")
 # print(s.sub1)
 s.a = 12
 print(s.test())
-=======
+
 import time
 import functools
 
@@ -90,4 +90,4 @@ do_this(1000000)
 
 print(do_this.__doc__)
 
->>>>>>> 5f0e407a502a793a8e4d948a420ff81e86c46e34
+
