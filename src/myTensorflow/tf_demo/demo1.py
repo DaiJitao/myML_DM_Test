@@ -14,7 +14,7 @@ with tf.Session() as sess:
     print(y.eval())
     print(y2.eval())
     print(d.eval())
-    path = saver.save(sess, "D:/model/test")
+    path = saver.save(sess, "E:/model/test")
     print(path)
 
 state = tf.Variable(0, dtype=tf.float32)

@@ -13,3 +13,4 @@ e = tf.add(a, d, name="add_e")
 with tf.Session() as sess:
     tt = sess.run(e)
     print("tt", tt)
+    print(e)
