@@ -1,4 +1,4 @@
 from selenium import webdriver
-
-browser = webdriver.Firefox()
+# pip install selenium
+browser = webdriver.Chrome()
 browser.get("http://www.baidu.com/")
