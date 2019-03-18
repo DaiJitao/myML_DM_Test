@@ -18,3 +18,8 @@ def download(url, num_retries = 2):
     return html
 
 html = download("http://www.baidu.com", 2)
+
+
+from bs4 import BeautifulSoup
+bsObj = BeautifulSoup(html.read())
+print(bsObj.head.link)
