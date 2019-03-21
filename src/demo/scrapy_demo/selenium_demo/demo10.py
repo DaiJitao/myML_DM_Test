@@ -28,8 +28,31 @@ def get_page_index(offset):
         return None
 
 
-file = "F:/data.txt"
-with open(file, 'wb') as f:
+def save_html():
+    file = "F:/data.txt"
+    with open(file, 'wb') as f:
+        html = get_page_index(0)
+        print(type(html.encode('utf-8')))
+        f.write(html.encode('utf-8'))
+
+def parse_page_index(html):
+    data = json.loads(html)
+    if data and 'data' in data.keys():
+        for item in data.get('data'):
+            yield item.get('article_url')
+
+
+
+def get_page_detail(url):
+    pass
+    # print("请求详情页 "， )
+
+
+
+def main():
     html = get_page_index(0)
-    print(type(html.encode('utf-8')))
-    f.write(html.encode('utf-8'))
+    for url in parse_page_index(html):
+        print(url)
+
+if __name__ == "__main__":
+    main()
