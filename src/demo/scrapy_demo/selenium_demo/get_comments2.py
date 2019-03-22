@@ -51,7 +51,7 @@ def get_comments(comments_url, all_num=0, count=10):
     # saveLoad.save_data(saveHtml, html)
 
 def get_url(page):
-    url = 'http://comment.sina.com.cn/page/info?version=1&format=json&channel=gn&newsid=comos-hqfskcp1388236&group=undefined&compress=0&ie=utf-8&oe=utf-8&page=1&page_size=10&t_size=3&h_size=3&thread=1&uid=unlogin_user&callback=jsonp_1553251072300&_=1553251072300'
+    url = 'http://comment.sina.com.cn/page/info?version=1&format=json&channel=gn&newsid=comos-hrfqzka0522165&group=undefined&compress=0&ie=utf-8&oe=utf-8&page=1&page_size=10&t_size=3&h_size=3&thread=1&uid=unlogin_user&callback=jsonp_1553253040954&_=1553253040954'
     url = url.replace("page=1", page)
     return url
 
@@ -74,10 +74,10 @@ if __name__ == "__main__":
     browser.close()
     """
     page = 0
-    file = 'F:/scrapy/xinlang/data27/'
+    file = 'F:/scrapy/xinlang/data39/'
     print(url)
     r = requests.get(url)
-    for i in range(50):
+    for i in range(10):
         saveData = file + "page" + str(i) + ".txt"
         print(saveData)
 
@@ -87,7 +87,7 @@ if __name__ == "__main__":
         print("access url ", url)
         data = response.text.encode('utf-8')
         save_data_txt(saveData, data)
-        breakTime = random.choice([2, 1.5, 2.5, 1, 3.5, 3])
+        breakTime = random.choice([2, 1.5, 2.5, 1, 3.5, 1])
         time.sleep(breakTime)
     print("结束")
 
