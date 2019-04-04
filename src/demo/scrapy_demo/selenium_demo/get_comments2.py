@@ -22,15 +22,12 @@ def get_page_index(url):
         return None
 
 
-# url = "https://www.toutiao.com/api/comment/list/?group_id=6650967291171176967&item_id=6650967291171176967&offset=0&count=5" # 评论地址
-
 def get_comments(comments_url, all_num=0, count=10):
     num = 5 # 每页的展示数量
     pages = int(all_num / num) # 一共有多少呀
     for i in range(pages):
         offset = num * i
         count = offset + num
-
         url_part = "&offset=" + str(offset) + "&count=" + str(count)
         print("url : ", url + url_part)
 
