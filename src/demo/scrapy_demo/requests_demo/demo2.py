@@ -23,7 +23,7 @@ def get_proxy():
         return None
 
 
-def get_html(url):
+def get_html(url, count=5):
     global proxy
     try:
         if proxy:
@@ -42,7 +42,8 @@ def get_html(url):
                 return get_html(url)
             else:
                 return None
-    except ConnectionError:
+    except ConnectionError as e:
+        print("Error args", e.args)
         return get_html(url)
 
 
