@@ -48,6 +48,28 @@ charset_len = len(charset)
 def convert2grey():
     pass
 
+def text2vec(text):
+    pass
+
+def get_next_batch(batch_size = 128):
+    batch_x = np.zeros([batch_size, IMAGE_WIDTH * IMAGE_HEIGHT])
+    batch_y = np.zeros([batch_size, MAX_CAPTCHA * charset_len])
+
+    #
+    def wrap_gen_captcha_text_and_image():
+        while True:
+            text, image = gen_captcha_text_and_iamge()
+            if image.shape == (60, 160, 3):
+                return text, image
+    for i in range(batch_size):
+        text, image = wrap_gen_captcha_text_and_image()
+        image = convert2grey(image)
+
+        batch_x[i, :] = image.flattern() / 255
+        batch_y[i, :] = text2vec(text)
+    return batch_x, batch_y
+
+
 def crack_acptcha_cnn(w_alpha=.01, b_alpha=.1):
     x = tf.reshape(X, shape=[-1, IMAGE_HEIGHT * IMAGE_WIDTH, 1])
     # 3 conv layer
@@ -63,12 +85,25 @@ def crack_acptcha_cnn(w_alpha=.01, b_alpha=.1):
     conv2 = tf.nn.max_pool(conv2, ksize=[1, 2, 2, 1], strides=[1, 1, 1, 1], padding='SAME')
     conv2 = tf.nn.dropout(conv2, keep_prob)
 
-    w_c3 = tf.Variable(w_alpha * tf.random_normal([3, 3, 64, 128]))
+    w_c3 = tf.Variable(w_alpha * tf.random_normal([3, 3, 64, 64]))
     b_c3 = tf.Variable(b_alpha * tf.random_normal([128]))
     conv3 = tf.nn.relu(tf.nn.bias_add(tf.nn.conv2d(conv2, w_c3, strides=[1, 1, 1, 1], padding='SAME'), b_c3))
     conv3 = tf.nn.max_pool(conv3, ksize=[1, 2, 2, 1], strides=[1, 1,1,1], padding='SAME')
     conv3 = tf.nn.dropout(conv3, keep_prob)
-    # end
+    # end 3 layer; start full connected layer
+    w_d = tf.Variable(w_alpha * tf.random_normal([8 * 20 * 64, 1024]))
+    b_d = tf.Variable(b_alpha * tf.random_normal([1024]))
+    dense = tf.reshape(conv3, [-1, w_d.get_shape().as_list()[0]])
+    dense = tf.nn.relu(tf.add(tf.matmul(dense, w_d),b_d))
+    dense = tf.nn.dropout(dense, keep_prob)
+
+    w_out = tf.Variable(w_alpha*tf.random_normal([1024, MAX_CAPTCHA * charset_len]))
+    b_out = tf.Variable(b_alpha*tf.random_normal([MAX_CAPTCHA * charset_len]))
+    out = tf.nn.relu(tf.add(tf.matmul(dense, w_out), b_out))
+    out = tf.nn.dropout(out, keep_prob)
+    # end full layer
+    return out
+
 
 
 def train_crack_captcha_cnn():
@@ -77,7 +112,22 @@ def train_crack_captcha_cnn():
     optimizer = tf.train.GradientDescentOptimizer(learning_rate=.001).minimize(loss)
     predict = tf.reshape(output, [-1, MAX_CAPTCHA, charset_len])
     max_idx_p = tf.argmax(output, 2)
-    pass
+    max_idx_l = tf.argmax(tf.reshape(Y, [-1, MAX_CAPTCHA, charset_len]))
+    correct_pred = tf.equal(max_idx_p, max_idx_l)
+    accuracy = tf.reduce_mean(tf.cast(correct_pred, tf.float32))
+
+    saver = tf.train.Saver()
+    with tf.Session() as sess:
+        sess.run(tf.global_variables_initializer())
+        step = 0
+        while True:
+            batch_x, batch_y = get_next_batch(64)
+            _, loss_ = sess.run([optimizer, loss], feed_dict={X:batch_x, Y:batch_x})
+            print(step, loss_)
+
+            if step%100 == 0:
+                pass
+
 
 if __name__ == "__main__":
     train = 0
