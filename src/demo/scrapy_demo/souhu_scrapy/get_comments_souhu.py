@@ -95,7 +95,7 @@ def parse_url(page):
     url = url.replace('page_no=2', page)
     return url
 
-no = 4  # no=3 4 7 9 11 13 16 19 20 21 23 25 26 29未访问 6打不开
+no = 4  # no=3 4 7 9 11 13 16 19 20 21 23 25 26 29未访问 6 打不开
 def get_comments_from_urls(comment_url):
     global no
     save_path = "F:/data/souhu/" + str(no)

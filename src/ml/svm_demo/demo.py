@@ -34,9 +34,9 @@ cls = svm.LinearSVC()
 cls = svm.SVC(kernel='rbf', class_weight='balanced')
 cls.fit(x_train, y_train)
 save_model = "./model"
-joblib.dump(cls, save_model)
+# joblib.dump(cls, save_model) # 保存模型
 # 预测
-cls_ = joblib.load(save_model)
+cls_ = joblib.load(save_model) # 读取模型
 y_predict = cls_.predict(x_test)
-# print("混淆矩阵：", confusion_matrix(y_test, y_predict))
-print('rbf准确率： ', accuracy_score(y_true=y_test, y_pred=y_predict))
+print("混淆矩阵：\n", confusion_matrix(y_test, y_predict))
+print('rbf准确率：\n', accuracy_score(y_true=y_test, y_pred=y_predict))
