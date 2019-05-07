@@ -35,7 +35,8 @@ def get_query(url):
 def get_url(page):
     # 评论URL
     # title_url = 'http://comment5.news.sina.com.cn/comment/skin/default.html?channel=cj&newsid=comos-hmutuec7789553&group=0'
-    title_url = 'http://comment5.news.sina.com.cn/comment/skin/default.html?channel=yl&newsid=comos-hqfskcp5146460&group=0'
+    # title_url = 'http://comment5.news.sina.com.cn/comment/skin/default.html?channel=yl&newsid=comos-hqfskcp5146460&group=0' # 范丞丞
+    title_url = 'http://comment5.news.sina.com.cn/comment/skin/default.html?channel=yl&newsid=comos-hvhiews0190146&group=0'
     query = get_query(title_url)
     channel = query['channel']
     newsid = query['newsid']
@@ -45,12 +46,10 @@ def get_url(page):
     url = url.replace("page=1", page)
     return url
 
-def save_data(start, end):
+def save_data(out_path, start, end):
     name = threading.current_thread().getName()
-    file = 'F:/scrapy/xinLang_zhaiTianLin/'
-    # num_comnt = ceil(235604 / 10) # 共有多少页
     for i in range(start, end):
-        saveData = file + "page" + str(i) + ".txt"
+        saveData = out_path + "page" + str(i) + ".txt"
         page = "page=" + str(i+1)
         url = get_url(page)
         response = requests.get(url)
@@ -62,14 +61,18 @@ def save_data(start, end):
     print("线程-", name, " 执行完毕！")
 
 def main():
-    num_comnt = ceil(235612 / 10)
+    out_path = 'F:/scrapy/sina_data/zhangDanFeng/data/'
+    num_comnt = ceil(44331 / 10)
     cpu_num = multiprocessing.cpu_count()
     interval = ceil(num_comnt / cpu_num)
     for i in range(cpu_num):
         start = i * interval
         end = start + interval
-        s = threading.Thread(target=save_data, args=(start, end), name=str(i))
+        s = threading.Thread(target=save_data, args=(out_path, start, end), name=str(i))
         s.start()
+    print("\n 采集完毕！")
 
 if __name__ == "__main__":
-    main()
+   main()
+
+
