@@ -2,6 +2,7 @@ from src.demo.Sina_Data_Collection.collection.comments_crawler import get_query
 import time
 import json
 import logging
+from multiprocessing import Queue
 
 logging.basicConfig(level=logging.DEBUG,  # 控制台打印的日志级别
                     filename='log/new.log',
@@ -58,6 +59,8 @@ def reviews_parser(content, save_path, save_file_name):
     json_data = json.loads(str)  # dict
     cmntlist = json_data['result']['cmntlist']
     return cmntlist
+
+
 
 
 if __name__ == '__main__':
