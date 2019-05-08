@@ -7,6 +7,20 @@ import urllib.parse
 from math import ceil
 import multiprocessing
 import threading
+from src.demo.Sina_Data_Collection.common.util import mkdir
+
+
+# 装饰器
+def count_time(func):
+    def inner(url, page):
+        s = time.time()
+        url = func(url, page)
+        e = time.time()
+        inv = e - s
+        print("采集完毕，共耗时", inv)
+        return url
+
+    return inner
 
 
 def get_page_index(url):
@@ -23,56 +37,67 @@ def get_page_index(url):
         print(e)
         return None
 
+
 def save_data_txt(path, data):
     with open(path, 'wb') as file:
         file.write(data)
+
 
 def get_query(url):
     result = urlsplit(url)
     query = dict(urllib.parse.parse_qsl(result.query))
     return query
 
-def get_url(page):
-    # 评论URL
-    # title_url = 'http://comment5.news.sina.com.cn/comment/skin/default.html?channel=cj&newsid=comos-hmutuec7789553&group=0'
-    # title_url = 'http://comment5.news.sina.com.cn/comment/skin/default.html?channel=yl&newsid=comos-hqfskcp5146460&group=0' # 范丞丞
-    title_url = 'http://comment5.news.sina.com.cn/comment/skin/default.html?channel=yl&newsid=comos-hvhiews0190146&group=0'
-    query = get_query(title_url)
+
+def get_url(page, url):
+    query = get_query(url)  # 评论URL
     channel = query['channel']
     newsid = query['newsid']
-    url = 'http://comment.sina.com.cn/page/info?version=1&format=json&channel='+ channel \
-          +'&newsid='+ newsid \
-          +'&group=undefined&compress=0&ie=utf-8&oe=utf-8&page=1&page_size=10&t_size=3&h_size=3&thread=1&uid=unlogin_user&callback=jsonp_1553578475928&_=1553578475928'
-    url = url.replace("page=1", page)
-    return url
+    _url = 'http://comment.sina.com.cn/page/info?version=1&format=json&channel=' + channel \
+           + '&newsid=' + newsid \
+           + '&group=undefined&compress=0&ie=utf-8&oe=utf-8&page=1&page_size=10&t_size=3&h_size=3&thread=1&uid=unlogin_user&callback=jsonp_1553578475928&_=1553578475928'
+    _url = _url.replace("page=1", page)
+    return _url
 
-def save_data(out_path, start, end):
+
+def save_data(out_path, start, end, reviews_url):
     name = threading.current_thread().getName()
     for i in range(start, end):
         saveData = out_path + "page" + str(i) + ".txt"
-        page = "page=" + str(i+1)
-        url = get_url(page)
+        page = "page=" + str(i + 1)
+        url = get_url(page, reviews_url)
         response = requests.get(url)
         data = response.text.encode('utf-8')
         save_data_txt(saveData, data)
-        breakTime = random.choice([2, 1.5, 0.5, 1, 2.5, 1])
+        breakTime = random.choice([0.8, 1.5, 0.5, 1, 2.3, 1.8])
         time.sleep(breakTime)
-        print("保存文件", saveData, " 线程-",name, " access url:",url)
+        print("保存文件", saveData, " 线程-", name, " access url:", url)
     print("线程-", name, " 执行完毕！")
 
+
 def main():
-    out_path = 'F:/scrapy/sina_data/zhangDanFeng/data/'
-    num_comnt = ceil(44331 / 10)
-    cpu_num = multiprocessing.cpu_count()
+    out_path = 'F:/scrapy/sina_data/zhaiTianLin/data/'
+    reviews_url = 'http://comment5.news.sina.com.cn/comment/skin/default.html?channel=yl&newsid=comos-hqfskcp5146460&group=0'
+    mkdir(out_path)
+    save_data_txt(out_path + "url.txt", reviews_url.encode('utf-8'))
+    num_comnt = ceil(236094 / 10)
+    cpu_num = multiprocessing.cpu_count()  # 获取核数，一个线程对应一个核
     interval = ceil(num_comnt / cpu_num)
+    start = time.time()
+    threads = []
     for i in range(cpu_num):
         start = i * interval
         end = start + interval
-        s = threading.Thread(target=save_data, args=(out_path, start, end), name=str(i))
+        s = threading.Thread(target=save_data, args=(out_path, start, end, reviews_url), name=str(i))
+        threads.append(s)
         s.start()
-    print("\n 采集完毕！")
+
+    for thread in threads:
+        thread.join()
+
+    inv = time.time() - start
+    print("采集完毕，共耗时", inv)
+
 
 if __name__ == "__main__":
-   main()
-
-
+    main()

@@ -6,11 +6,12 @@ import threading
 import multiprocessing
 from math import ceil
 import os
+from src.demo.Sina_Data_Collection.common.util import mkdir
+
 
 def get_file(path):
     files = os.listdir(path)
     return files, len(files)
-
 
 
 def save_data_to_csv(path, file_name, content):
@@ -39,21 +40,22 @@ def reviews_parser(content, save_path, save_file_name):
     str = content[start_index:-1]
     json_data = json.loads(str)  # dict
     cmntlist = json_data['result']['cmntlist']
-    result = []
-    for element in cmntlist:
-        uid = element['uid']
-        rank = element['rank']
-        area = element["area"]
-        content = element['content']
-        nick = element["nick"]
-        parent_nick = element["parent_nick"]
-        parent_uid = element['parent_uid']
-        time = element['time']
-        newsid = element['newsid']
-        hot = element['hot']
-        data = [uid, rank, area, content, nick, parent_nick, parent_uid, time, newsid, hot]
-        result.append(data)
-    save_data_to_csv(save_path, save_file_name, result)
+    if (len(cmntlist) != 0):
+        result = []
+        for element in cmntlist:
+            uid = element['uid']
+            rank = element['rank']
+            area = element["area"]
+            content = element['content']
+            nick = element["nick"]
+            parent_nick = element["parent_nick"]
+            parent_uid = element['parent_uid']
+            time = element['time']
+            newsid = element['newsid']
+            hot = element['hot']
+            data = [uid, rank, area, content, nick, parent_nick, parent_uid, time, newsid, hot]
+            result.append(data)
+        save_data_to_csv(save_path, save_file_name, result)
 
 
 def all_data_hanler(input_path, out_path, out_name, start, end):
@@ -68,21 +70,28 @@ def all_data_hanler(input_path, out_path, out_name, start, end):
 
 
 def main():
-    input_path = "F:/scrapy/sina_data/zhangDanFeng/data/"
+    input_path = "F:/scrapy/sina_data/zhaiTianLin/data/"
     files, count = get_file(input_path)  # 文件的数量
     cpu_num = multiprocessing.cpu_count()
-    out_path = 'F:/scrapy/sina_data/zhangDanFeng/parsedData/'  # 'F:/scrapy/xinLang_fanChengCheng_parsed/'
-    out_name = "all_data_zDf.csv"
+    out_path = 'F:/scrapy/sina_data/zhaiTianLin/parsedData/'
+    out_name = "all_data.csv"
     interval = ceil(count / cpu_num)
+    threads = []
+    start = time.time()
     for i in range(cpu_num):
         start = i * interval
         end = start + interval
-        # all_data_hanler(input_path=input_path, out_path=out_path, start=start, end=end)
-        thread = threading.Thread(target=all_data_hanler, args=(input_path, out_path, out_name, start, end),name=str(i))
+        thread = threading.Thread(target=all_data_hanler, args=(input_path, out_path, out_name, start, end),
+                                  name=str(i))
+        threads.append(thread)
         thread.start()
+
+    for thread in threads:
         thread.join()
 
-    print("handle ok")
+    end = time.time()
+    inv = end - start
+    print("所有数据处理完毕， 耗时：", inv)
 
 
 if __name__ == '__main__':
