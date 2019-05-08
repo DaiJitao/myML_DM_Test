@@ -8,6 +8,13 @@ from math import ceil
 import multiprocessing
 import threading
 from src.demo.Sina_Data_Collection.common.util import mkdir
+import logging
+
+logging.basicConfig(level=logging.DEBUG,  # 控制台打印的日志级别
+                    filename='log/get_comments.log',
+                    filemode='a',  ##模式，有w和a，w就是写模式，每次都会重新写日志，覆盖之前的日志# a是追加模式，默认如果不写的话，就是追加模式
+                    format='%(asctime)s - %(pathname)s[line:%(lineno)d] - %(levelname)s: %(message)s'  # 日志格式
+                    )
 
 
 # 装饰器
@@ -71,8 +78,9 @@ def save_data(out_path, start, end, reviews_url):
         save_data_txt(saveData, data)
         breakTime = random.choice([0.8, 1.5, 0.5, 1, 2.3, 1.8])
         time.sleep(breakTime)
-        print("保存文件", saveData, " 线程-", name, " access url:", url)
+        logging.info("保存文件" + saveData + " 线程-" + name + " access url:" + url)
     print("线程-", name, " 执行完毕！")
+    logging.info("线程-" + name + " 执行完毕！")
 
 
 def main():
@@ -97,6 +105,7 @@ def main():
 
     inv = time.time() - start
     print("采集完毕，共耗时", inv)
+    logging.info("采集完毕，共耗时" + str(inv))
 
 
 if __name__ == "__main__":

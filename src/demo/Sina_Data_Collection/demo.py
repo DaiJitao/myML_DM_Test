@@ -1,6 +1,14 @@
 from src.demo.Sina_Data_Collection.collection.get_comments2 import get_query
 import time
 import json
+import logging
+
+logging.basicConfig(level=logging.DEBUG,  # 控制台打印的日志级别
+                    filename='log/new.log',
+                    filemode='a',  ##模式，有w和a，w就是写模式，每次都会重新写日志，覆盖之前的日志# a是追加模式，默认如果不写的话，就是追加模式
+                    format='%(asctime)s - %(pathname)s[line:%(lineno)d] - %(levelname)s: %(message)s'  # 日志格式
+                    )
+
 
 # 装饰器修饰
 def count_time(func):
@@ -43,6 +51,7 @@ def myfunc(a, b):
     print(" myfunc(%s,%s) called." % (a, b))
     return a + b
 
+
 def reviews_parser(content, save_path, save_file_name):
     start_index = content[0:30].index('(') + 1
     str = content[start_index:-1]
@@ -51,9 +60,6 @@ def reviews_parser(content, save_path, save_file_name):
     return cmntlist
 
 
-
 if __name__ == '__main__':
-    title_url = 'http://comment5.news.sina.com.cn/comment/skin/default.html?channel=yl&newsid=comos-hvhiews0190146&group=0'
-    url = get_url("page=99",title_url)
-    print(url)
-
+    logging.debug("dddgggb")
+    logging.info("infofo")
