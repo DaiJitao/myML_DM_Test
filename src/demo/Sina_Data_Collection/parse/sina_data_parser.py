@@ -30,6 +30,7 @@ def save_data_to_csv(path, file_name, content):
                 csv_write.writerow(data)
             except UnicodeEncodeError as e:
                 print(e)
+                logging.info(e)
 
 
 def get_data_from_txt(filename):
@@ -89,6 +90,7 @@ def main():
     interval = ceil(count / cpu_num)
     threads = []
     start = time.time()
+    mkdir(out_path)
     for i in range(cpu_num):
         start = i * interval
         end = start + interval
@@ -107,4 +109,4 @@ def main():
 
 
 if __name__ == '__main__':
-    pass
+    main()

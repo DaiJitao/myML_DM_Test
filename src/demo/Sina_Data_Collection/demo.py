@@ -1,4 +1,4 @@
-from src.demo.Sina_Data_Collection.collection.get_comments2 import get_query
+from src.demo.Sina_Data_Collection.collection.comments_crawler import get_query
 import time
 import json
 import logging
