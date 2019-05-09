@@ -46,8 +46,9 @@ def num_users(dict_):
     return res_num_review
 
 
-def data_desc(file):
+def data_desc(event_name):
     sum_ = 0
+    file = 'F:/scrapy/sina_data/' + event_name + '/parsedData/all_data.csv'
     result = user_reviews(file)
     res_num_review = num_users(result)
     print("用户总数量", len(result))
@@ -63,8 +64,8 @@ def data_desc(file):
 
 
 def main():
-    file = r'F:\scrapy\sina_data\fuChouZhe\parsedData\all_data.csv'
-    data_desc(file)
+    name = 'zhangDanFeng'
+    data_desc(event_name=name)
 
 if __name__ == '__main__':
     main()

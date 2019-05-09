@@ -15,9 +15,6 @@ plt.figure(1)
 axes1 = plt.subplot(211)
 axes2 = plt.subplot(212)
 axes1.plot(data)
-axes2.plot(data)
-
-
 
 axes1 = plt.subplot(211)
 axes2 = plt.subplot(212)

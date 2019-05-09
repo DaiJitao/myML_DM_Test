@@ -22,5 +22,10 @@ def tanh(v):
     b = np.exp(-v)
     return (a - b) / (a + b)
 
+
+
 if __name__ == "__main__":
-    demo()
+    x = [1, 2, 3, 4, 5]
+    y = [1, 2, 3, 4, 5]
+    plt.bar(x, y, y)
+    plt.show()

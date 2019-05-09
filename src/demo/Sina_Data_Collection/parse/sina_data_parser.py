@@ -3,7 +3,6 @@ import json
 import traceback
 import time
 import threading
-from threading import Lock
 import multiprocessing
 from multiprocessing import Queue
 from math import ceil
@@ -45,15 +44,16 @@ def save_data_to_csv(path, file_name, res_queue):
         # csv_write.writerow(["name", "age"])
         while not res_queue.empty():
             content = res_queue.get()
+            print("队列大小", res_queue.qsize())
             for data in content:
                 try:
                     csv_write.writerow(data)
                 except UnicodeEncodeError as e:
-                    print(e)
+                    print("编码错误：", e)
                     logging.info(e)
 
 
-def reviews_parser(content, res_queue):
+def reviews_parser(content, res_queue, file):
     """
     解析文件，提取数据
     :param content:
@@ -63,7 +63,10 @@ def reviews_parser(content, res_queue):
         start_index = content[0:30].index('(') + 1
         str = content[start_index:-1]
         json_data = json.loads(str)  # dict
-        cmntlist = json_data['result']['cmntlist']
+        if 'result' in json_data and 'cmntlist' in json_data['result']:
+            cmntlist = json_data['result']['cmntlist']
+        else:
+            cmntlist = []
         if (len(cmntlist) != 0):
             result = []
             for element in cmntlist:
@@ -92,14 +95,15 @@ def all_data_hanler(input_path, start, end, res_queue):
         file = input_path + name
         content = get_data_from_txt(file)  # 读取文件
         if content != None:
-            # print("线程-" + thread_name + "-处理文件..." + file)
-            logging.info("线程-" + thread_name + "-处理文件..." + file)
-            reviews_parser(content, res_queue)
+            # print("\n线程-" + thread_name + "-处理文件..." + file)
+            logging.info("\n线程-" + thread_name + "-处理文件..." + file)
+            reviews_parser(content, res_queue, file)
 
 
 def main():
-    input_path = r"F:\scrapy\sina_data\fuChouZhe\data\\"
-    out_path = r"F:\scrapy\sina_data\fuChouZhe\parsedData\\"
+    event_name = 'zhangDanFeng'
+    input_path = "F:/scrapy/sina_data/"+ event_name +"/data/"
+    out_path = "F:/scrapy/sina_data/" + event_name + "/parsedData/"
     out_name = "all_data.csv"
 
     res_queue = Queue()  # 队列
@@ -117,13 +121,14 @@ def main():
         threads.append(thread)
         thread.start()
 
-    save_thread = threading.Thread(target=save_data_to_csv, args=(out_path, out_name, res_queue))  # 保存文件线程
-    save_thread.start()
 
     for thread in threads:
         thread.join()
-    save_thread.join()
-
+    # save_thread = threading.Thread(target=save_data_to_csv, args=(out_path, out_name, res_queue))  # 保存文件线程
+    # save_thread.start()
+    # save_thread.join()
+    save_data_to_csv(out_path, out_name, res_queue)
+    print("start-", start, " end-", end)
     end = time.time()
     inv = end - start
     print("所有数据处理完毕， 耗时：", inv)
@@ -131,4 +136,4 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    pass # main()

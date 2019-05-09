@@ -84,7 +84,7 @@ def save_data(out_path, start, end, reviews_url):
     logging.info("线程-" + name + "执行完毕！")
 
 
-def get_from_url(out_path, reviews_url):
+def get_from_url(out_path, reviews_url, num_reviews):
     mkdir(out_path)
     save_data_txt(out_path + "url.txt", reviews_url.encode('utf-8'))
     num_comnt = ceil(236094 / 10) # 页数
@@ -109,7 +109,8 @@ def get_from_url(out_path, reviews_url):
 def main():
     out_path = 'F:/scrapy/sina_data/jueDiQiuSheng/data/'
     reviews_url = 'http://comment5.news.sina.com.cn/comment/skin/default.html?channel=cj&newsid=comos-hvhiews0483481&group=0'
-    get_from_url(out_path, reviews_url)
+    num_reviews = 38012
+    get_from_url(out_path, reviews_url, num_reviews)
 
 if __name__ == "__main__":
     main()
