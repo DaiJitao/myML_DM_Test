@@ -64,7 +64,7 @@ def data_desc(event_name):
 
 
 def main():
-    name = 'zhangDanFeng'
+    name = 'jueDiQiuSheng'
     data_desc(event_name=name)
 
 if __name__ == '__main__':

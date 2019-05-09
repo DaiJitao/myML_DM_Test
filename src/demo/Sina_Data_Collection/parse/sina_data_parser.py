@@ -101,7 +101,7 @@ def all_data_hanler(input_path, start, end, res_queue):
 
 
 def main():
-    event_name = 'zhangDanFeng'
+    event_name = 'jueDiQiuSheng'
     input_path = "F:/scrapy/sina_data/"+ event_name +"/data/"
     out_path = "F:/scrapy/sina_data/" + event_name + "/parsedData/"
     out_name = "all_data.csv"
@@ -136,4 +136,4 @@ def main():
 
 
 if __name__ == '__main__':
-    pass # main()
+    main()

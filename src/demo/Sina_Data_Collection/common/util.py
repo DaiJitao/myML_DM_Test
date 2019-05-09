@@ -44,15 +44,26 @@ def reviews_parser(content):
     start_index = content[0:30].index('(') + 1
     str = content[start_index:-1]
     json_data = json.loads(str)  # dict
-    cmntlist = json_data['result']['cmntlist']
-    return cmntlist
+    if 'result' in json_data and 'cmntlist' in json_data['result']:
+        cmntlist = json_data['result']['cmntlist']
+        return cmntlist
+    else:
+        return []
+
 
 
 def delete_file(file):
     content = get_data_from_txt(file)
     list_ = reviews_parser(content)
-    if len(list_) == 0:
-        os.remove(file)
+    try:
+        if len(list_) == 0:
+            if "url" not in file:
+                os.remove(file)
+                print("删除文件-", file)
+        return True
+    except:
+        return False
+
 
 
 def sort_key(s):
@@ -68,12 +79,11 @@ def strsort(alist):
     return alist
 
 if __name__ == '__main__':
-    out_path = r"F:\scrapy\sina_data\zhaiTianLin\data\\"
+    out_path = r"F:\scrapy\sina_data\jueDiQiuSheng\data\\"
     files, size = list_all_files(out_path)
     strsort(files)
     for i in files:
         file = out_path + i
-        print(file)
         delete_file(file)
 
 

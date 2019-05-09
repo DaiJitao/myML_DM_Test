@@ -76,18 +76,18 @@ def save_data(out_path, start, end, reviews_url):
         response = requests.get(url)
         data = response.text.encode('utf-8')
         save_data_txt(saveData, data)
-        breakTime = random.choice([0.8, 1.5, 0.5, 1, 2.3, 1.8])
+        breakTime = random.choice([0.8, 1.5, 0.5, 1, 2.3, 1.8, 1, 2, 1.5, 0.5, 3, 1, 0.5, 1])
         time.sleep(breakTime)
         logging.info("保存文件" + saveData + " 线程-" + name + " access url:" + url)
 
     print("线程-", name, "执行完毕！")
-    logging.info("线程-" + name + "执行完毕！")
+    logging.info("\n线程-" + name + "执行完毕！")
 
 
 def get_from_url(out_path, reviews_url, num_reviews):
     mkdir(out_path)
     save_data_txt(out_path + "url.txt", reviews_url.encode('utf-8'))
-    num_comnt = ceil(236094 / 10) # 页数
+    num_comnt = ceil(num_reviews / 10) # 页数
     cpu_num = multiprocessing.cpu_count()  # 获取核数，一个线程对应一个核
     interval = ceil(num_comnt / cpu_num)
     start = time.time()
@@ -99,6 +99,7 @@ def get_from_url(out_path, reviews_url, num_reviews):
         threads.append(s)
         s.start()
 
+    print("end-", end)
     for thread in threads:
         thread.join()
 
@@ -109,7 +110,7 @@ def get_from_url(out_path, reviews_url, num_reviews):
 def main():
     out_path = 'F:/scrapy/sina_data/jueDiQiuSheng/data/'
     reviews_url = 'http://comment5.news.sina.com.cn/comment/skin/default.html?channel=cj&newsid=comos-hvhiews0483481&group=0'
-    num_reviews = 38012
+    num_reviews = 38081
     get_from_url(out_path, reviews_url, num_reviews)
 
 if __name__ == "__main__":
