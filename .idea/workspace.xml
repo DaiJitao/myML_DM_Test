@@ -2,8 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b2a4b8e9-6de7-4272-bd39-e4e8a816b613" name="Default" comment="">
+<<<<<<< HEAD
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ml/nlp_demo/fastText_demo/demo1.py" afterPath="$PROJECT_DIR$/src/ml/nlp_demo/fastText_demo/demo1.py" />
+=======
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ml/nlp_demo/hannlp/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ml/nlp_demo/hannlp/data/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ml/nlp_demo/hannlp/data/out.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ml/nlp_demo/hannlp/data/text.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ml/nlp_demo/hannlp/demo1.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ml/nlp_demo/hannlp/extract_data.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ml/nlp_demo/hannlp/ner/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ml/nlp_demo/hannlp/tokenizer.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ml/nlp_demo/textrank/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ml/nlp_demo/textrank/demo1.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+>>>>>>> 2aa1cf63b01988923fc31f2997d1860df2f47e02
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,27 +27,46 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/myML_DM_Test$util__1_.coverage" NAME="util (1) Coverage Results" MODIFIED="1557379697111" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/demo/web_spammer_detection/common" />
+    <SUITE FILE_PATH="coverage/myML_DM_Test$util.coverage" NAME="util Coverage Results" MODIFIED="1557376416343" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/demo/Sina_Data_Collection/common" />
+    <SUITE FILE_PATH="coverage/myML_DM_Test$demo1__1_.coverage" NAME="demo1 (1) Coverage Results" MODIFIED="1558880395591" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/ml/nlp_demo/textrank" />
     <SUITE FILE_PATH="coverage/myML_DM_Test$comments_crawler.coverage" NAME="comments_crawler Coverage Results" MODIFIED="1557373282135" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/demo/Sina_Data_Collection/collection" />
+<<<<<<< HEAD
     <SUITE FILE_PATH="coverage/myML_DM_Test$get_comments2.coverage" NAME="get_comments2 Coverage Results" MODIFIED="1557220562262" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/demo/Sina_Data_Collection" />
     <SUITE FILE_PATH="coverage/myML_DM_Test$data_length_desc.coverage" NAME="data_length_desc Coverage Results" MODIFIED="1558085634489" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/demo/web_spammer_detection/reviews_length" />
     <SUITE FILE_PATH="coverage/myML_DM_Test$hot_news_crawler.coverage" NAME="hot_news_crawler Coverage Results" MODIFIED="1557372297999" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/demo/Sina_Data_Collection/collection" />
     <SUITE FILE_PATH="coverage/myML_DM_Test$demo.coverage" NAME="demo Coverage Results" MODIFIED="1557286333145" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/demo/Sina_Data_Collection" />
+=======
+    <SUITE FILE_PATH="coverage/myML_DM_Test$demo2.coverage" NAME="demo2 Coverage Results" MODIFIED="1557315462726" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/demo/Sina_Data_Collection" />
+>>>>>>> 2aa1cf63b01988923fc31f2997d1860df2f47e02
     <SUITE FILE_PATH="coverage/myML_DM_Test$demo3.coverage" NAME="demo3 Coverage Results" MODIFIED="1557369039076" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/myplot" />
+    <SUITE FILE_PATH="coverage/myML_DM_Test$demo.coverage" NAME="demo Coverage Results" MODIFIED="1557286333145" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/demo/Sina_Data_Collection" />
     <SUITE FILE_PATH="coverage/myML_DM_Test$get_comments2__1_.coverage" NAME="get_comments2 (1) Coverage Results" MODIFIED="1557284352419" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/demo/Sina_Data_Collection/collection" />
+    <SUITE FILE_PATH="coverage/myML_DM_Test$get_comments2.coverage" NAME="get_comments2 Coverage Results" MODIFIED="1557220562262" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/demo/Sina_Data_Collection" />
+    <SUITE FILE_PATH="coverage/myML_DM_Test$hot_news_crawler.coverage" NAME="hot_news_crawler Coverage Results" MODIFIED="1557372297999" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/demo/Sina_Data_Collection/collection" />
     <SUITE FILE_PATH="coverage/myML_DM_Test$sina_data_parser.coverage" NAME="sina_data_parser Coverage Results" MODIFIED="1557379576801" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/demo/Sina_Data_Collection/parse" />
+<<<<<<< HEAD
     <SUITE FILE_PATH="coverage/myML_DM_Test$demo1.coverage" NAME="demo1 Coverage Results" MODIFIED="1558515943590" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/ml/nlp_demo/fastText_demo" />
     <SUITE FILE_PATH="coverage/myML_DM_Test$util.coverage" NAME="util Coverage Results" MODIFIED="1557376416343" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/demo/Sina_Data_Collection/common" />
     <SUITE FILE_PATH="coverage/myML_DM_Test$util__1_.coverage" NAME="util (1) Coverage Results" MODIFIED="1557379697111" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/demo/web_spammer_detection/common" />
     <SUITE FILE_PATH="coverage/myML_DM_Test$demo2.coverage" NAME="demo2 Coverage Results" MODIFIED="1557315462726" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/demo/Sina_Data_Collection" />
+=======
+    <SUITE FILE_PATH="coverage/myML_DM_Test$extract_data.coverage" NAME="extract_data Coverage Results" MODIFIED="1558874261197" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/ml/nlp_demo/hannlp" />
+    <SUITE FILE_PATH="coverage/myML_DM_Test$demo1.coverage" NAME="demo1 Coverage Results" MODIFIED="1558858003561" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/ml/nlp_demo/jieba_demo" />
+>>>>>>> 2aa1cf63b01988923fc31f2997d1860df2f47e02
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="data_length_desc.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/demo/web_spammer_detection/reviews_length/data_length_desc.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="2500">
               <caret line="101" column="0" lean-forward="false" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
+=======
+            <state relative-caret-position="0">
+              <caret line="113" column="25" lean-forward="false" selection-start-line="113" selection-start-column="17" selection-end-line="113" selection-end-column="25" />
+>>>>>>> 2aa1cf63b01988923fc31f2997d1860df2f47e02
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -41,6 +74,7 @@
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="test.csv" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/demo/Sina_Data_Collection/parse/test.csv">
           <provider editor-type-id="csv-table-editor">
@@ -70,6 +104,16 @@
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
+=======
+      <file leaf-file-name="hot_news_crawler.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/demo/Sina_Data_Collection/collection/hot_news_crawler.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="483">
+              <caret line="22" column="10" lean-forward="false" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+              </folding>
+>>>>>>> 2aa1cf63b01988923fc31f2997d1860df2f47e02
             </state>
           </provider>
         </entry>
@@ -77,8 +121,13 @@
       <file leaf-file-name="demo1.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ml/nlp_demo/fastText_demo/demo1.py">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="225">
               <caret line="9" column="24" lean-forward="false" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="24" />
+=======
+            <state relative-caret-position="3174">
+              <caret line="138" column="4" lean-forward="false" selection-start-line="138" selection-start-column="4" selection-end-line="138" selection-end-column="4" />
+>>>>>>> 2aa1cf63b01988923fc31f2997d1860df2f47e02
               <folding>
                 <element signature="e#0#34#0" expanded="true" />
               </folding>
@@ -86,18 +135,31 @@
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="genericpath.py" pinned="false" current-in-tab="false">
         <entry file="file://C:/ProgramData/Anaconda3/Lib/genericpath.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="775">
               <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+=======
+      <file leaf-file-name="util.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/demo/web_spammer_detection/common/util.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="23">
+              <caret line="55" column="37" lean-forward="false" selection-start-line="55" selection-start-column="37" selection-end-line="55" selection-end-column="37" />
+>>>>>>> 2aa1cf63b01988923fc31f2997d1860df2f47e02
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="data.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/news_projects/papers/data.txt">
+=======
+      <file leaf-file-name="demo1.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ml/nlp_demo/stanfordnlp/demo1.py">
+>>>>>>> 2aa1cf63b01988923fc31f2997d1860df2f47e02
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -106,6 +168,7 @@
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="demo1.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/news_projects/papers/demo1.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -114,6 +177,14 @@
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
               </folding>
+=======
+      <file leaf-file-name="demo1.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ml/nlp_demo/textrank/demo1.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="92">
+              <caret line="7" column="28" lean-forward="true" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+              <folding />
+>>>>>>> 2aa1cf63b01988923fc31f2997d1860df2f47e02
             </state>
           </provider>
         </entry>
@@ -175,10 +246,18 @@
         <option value="$PROJECT_DIR$/src/demo/Sina_Data_Collection/common/util.py" />
         <option value="$PROJECT_DIR$/src/demo/Sina_Data_Collection/parse/sina_data_parser.py" />
         <option value="$PROJECT_DIR$/src/demo/web_spammer_detection/common/util.py" />
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/src/algorithm_demo/The_method_of_programming/chapter6/solution.py" />
         <option value="$PROJECT_DIR$/src/demo/web_spammer_detection/semantic_analysis/demo.py" />
         <option value="$PROJECT_DIR$/src/demo/web_spammer_detection/reviews_length/data_length_desc.py" />
         <option value="$PROJECT_DIR$/src/ml/nlp_demo/fastText_demo/demo1.py" />
+=======
+        <option value="$PROJECT_DIR$/src/ml/nlp_demo/jieba_demo/demo1.py" />
+        <option value="$PROJECT_DIR$/src/ml/nlp_demo/hannlp/demo1.py" />
+        <option value="$PROJECT_DIR$/src/ml/nlp_demo/hannlp/extract_data.py" />
+        <option value="$PROJECT_DIR$/src/ml/nlp_demo/stanfordnlp/demo1.py" />
+        <option value="$PROJECT_DIR$/src/ml/nlp_demo/textrank/demo1.py" />
+>>>>>>> 2aa1cf63b01988923fc31f2997d1860df2f47e02
       </list>
     </option>
   </component>
@@ -188,11 +267,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1622" />
+    <option name="height" value="922" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -209,8 +288,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
+<<<<<<< HEAD
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="myML_DM_Test" />
@@ -897,6 +978,57 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+=======
+          <expand>
+            <path>
+              <item name="myML_DM_Test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myML_DM_Test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myML_DM_Test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myML_DM_Test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myML_DM_Test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myML_DM_Test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="ml" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myML_DM_Test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myML_DM_Test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="ml" type="462c0819:PsiDirectoryNode" />
+              <item name="nlp_demo" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myML_DM_Test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myML_DM_Test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="ml" type="462c0819:PsiDirectoryNode" />
+              <item name="nlp_demo" type="462c0819:PsiDirectoryNode" />
+              <item name="hannlp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myML_DM_Test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myML_DM_Test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="ml" type="462c0819:PsiDirectoryNode" />
+              <item name="nlp_demo" type="462c0819:PsiDirectoryNode" />
+              <item name="stanfordnlp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myML_DM_Test" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myML_DM_Test" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="ml" type="462c0819:PsiDirectoryNode" />
+              <item name="nlp_demo" type="462c0819:PsiDirectoryNode" />
+              <item name="textrank" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+>>>>>>> 2aa1cf63b01988923fc31f2997d1860df2f47e02
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -912,6 +1044,12 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\pycharm_workspce\myML_DM_Test\src\demo\Sina_Data_Collection\collection" />
     </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\pycharm_workspace\myML_DM_Test\src\ml\nlp_demo\hannlp" />
+      <recent name="F:\pycharm_workspace\myML_DM_Test\src\ml\nlp_demo\hannlp\data" />
+      <recent name="F:\pycharm_workspace\myML_DM_Test\src\demo\web_spammer_detection\qing_gan_fen_xi\data" />
+      <recent name="F:\pycharm_workspace\myML_DM_Test\src\demo\web_spammer_detection\qing_gan_fen_xi" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -925,6 +1063,7 @@
       </list>
     </option>
   </component>
+<<<<<<< HEAD
   <component name="RunManager" selected="Python.demo1">
     <configuration default="false" name="util" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -1020,6 +1159,16 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <method />
+=======
+  <component name="RunManager" selected="Python.demo1 (1)">
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+>>>>>>> 2aa1cf63b01988923fc31f2997d1860df2f47e02
     </configuration>
     <configuration default="true" type="BashConfigurationType" factoryName="Bash">
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -1129,15 +1278,6 @@
       <module name="myML_DM_Test" />
       <method />
     </configuration>
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <gulpfile />
-      <tasks />
-      <arguments />
-      <envs />
-      <method />
-    </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
       <command value="run" />
       <scripts />
@@ -1182,7 +1322,98 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method />
     </configuration>
+    <configuration name="demo1 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/ml/nlp_demo/textrank" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="myML_DM_Test" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/ml/nlp_demo/textrank/demo1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="demo1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/ml/nlp_demo/jieba_demo" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="myML_DM_Test" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/ml/nlp_demo/jieba_demo/demo1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="extract_data" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/ml/nlp_demo/hannlp" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="myML_DM_Test" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/ml/nlp_demo/hannlp/extract_data.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="sina_data_parser" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/demo/Sina_Data_Collection/parse" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="myML_DM_Test" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/demo/Sina_Data_Collection/parse/sina_data_parser.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="util (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/demo/web_spammer_detection/common" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="myML_DM_Test" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/demo/web_spammer_detection/common/util.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
     <list size="5">
+<<<<<<< HEAD
       <item index="0" class="java.lang.String" itemvalue="Python.util" />
       <item index="1" class="java.lang.String" itemvalue="Python.sina_data_parser" />
       <item index="2" class="java.lang.String" itemvalue="Python.util (1)" />
@@ -1196,6 +1427,21 @@
         <item index="2" class="java.lang.String" itemvalue="Python.util (1)" />
         <item index="3" class="java.lang.String" itemvalue="Python.sina_data_parser" />
         <item index="4" class="java.lang.String" itemvalue="Python.util" />
+=======
+      <item index="0" class="java.lang.String" itemvalue="Python.sina_data_parser" />
+      <item index="1" class="java.lang.String" itemvalue="Python.util (1)" />
+      <item index="2" class="java.lang.String" itemvalue="Python.demo1" />
+      <item index="3" class="java.lang.String" itemvalue="Python.extract_data" />
+      <item index="4" class="java.lang.String" itemvalue="Python.demo1 (1)" />
+    </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python.demo1 (1)" />
+        <item index="1" class="java.lang.String" itemvalue="Python.extract_data" />
+        <item index="2" class="java.lang.String" itemvalue="Python.demo1" />
+        <item index="3" class="java.lang.String" itemvalue="Python.util (1)" />
+        <item index="4" class="java.lang.String" itemvalue="Python.sina_data_parser" />
+>>>>>>> 2aa1cf63b01988923fc31f2997d1860df2f47e02
       </list>
     </recent_temporary>
   </component>
@@ -1274,6 +1520,7 @@
       <updated>1557369521137</updated>
     </task>
     <task id="LOCAL-00010" summary="modify parser : multithreads queue">
+<<<<<<< HEAD
       <created>1557380652501</created>
       <option name="number" value="00010" />
       <option name="presentableId" value="LOCAL-00010" />
@@ -1286,22 +1533,49 @@
       <option name="presentableId" value="LOCAL-00011" />
       <option name="project" value="LOCAL" />
       <updated>1558315634569</updated>
+=======
+      <created>1558275825386</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1558275825386</updated>
+    </task>
+    <task id="LOCAL-00011" summary="add java-python">
+      <created>1558858069514</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1558858069514</updated>
+>>>>>>> 2aa1cf63b01988923fc31f2997d1860df2f47e02
     </task>
     <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-9" y="-9" width="1618" height="870" extended-state="6" />
     <layout>
+<<<<<<< HEAD
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.108742006" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+=======
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20401554" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+>>>>>>> 2aa1cf63b01988923fc31f2997d1860df2f47e02
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29013255" sideWeight="0.5051814" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+<<<<<<< HEAD
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4099783" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3264642" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27982646" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36225596" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+=======
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283767" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45360824" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39027983" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25453368" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4108984" sideWeight="0.49481866" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+>>>>>>> 2aa1cf63b01988923fc31f2997d1860df2f47e02
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3991323" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1315,7 +1589,7 @@
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="processedProjectFiles" value="true" />
+    <option name="version" value="1" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -1324,7 +1598,8 @@
     <MESSAGE value="add workspace.xml" />
     <MESSAGE value="modify parser" />
     <MESSAGE value="modify parser : multithreads queue" />
-    <option name="LAST_COMMIT_MESSAGE" value="modify parser : multithreads queue" />
+    <MESSAGE value="add java-python" />
+    <option name="LAST_COMMIT_MESSAGE" value="add java-python" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1349,6 +1624,7 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/python-skeletons/multiprocessing/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
@@ -1437,6 +1713,10 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/demo/scrapy_demo/selenium_demo/demo1.py">
+=======
+    <entry file="file://$USER_HOME$/.PyCharm2017.1/system/python_stubs/-313451744/builtins.py" />
+    <entry file="file://$PROJECT_DIR$/src/demo/multi_processing/demo1.py">
+>>>>>>> 2aa1cf63b01988923fc31f2997d1860df2f47e02
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1445,8 +1725,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/demo/scrapy_demo/selenium_demo/demo2.py">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+=======
+        <state relative-caret-position="200">
+          <caret line="8" column="16" lean-forward="true" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+>>>>>>> 2aa1cf63b01988923fc31f2997d1860df2f47e02
         </state>
       </provider>
     </entry>
@@ -1534,6 +1819,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/demo/scrapy_demo/selenium_demo/parse_url.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1542,12 +1828,17 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/demo/scrapy_demo/selenium_demo/save_load.py">
+=======
+    <entry file="file://$PROJECT_DIR$/src/demo/Sina_Data_Collection/parse/test.csv" />
+    <entry file="file://$PROJECT_DIR$/src/demo/Sina_Data_Collection/collection/multiThread_demo.py">
+>>>>>>> 2aa1cf63b01988923fc31f2997d1860df2f47e02
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-375">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/demo/scrapy_demo/selenium_demo/simulated_login.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-300">
@@ -1563,19 +1854,57 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/demo/scrapy_demo/demo3.py">
+=======
+    <entry file="file://$PROJECT_DIR$/src/demo/Sina_Data_Collection/__init__.py" />
+    <entry file="file://$USER_HOME$/.PyCharm2017.1/system/python_stubs/-313451744/nt.py" />
+    <entry file="file://C:/ProgramData/Anaconda3/Lib/os.py" />
+    <entry file="file://$PROJECT_DIR$/src/demo/Sina_Data_Collection/log/new.log" />
+    <entry file="file://$PROJECT_DIR$/src/demo/Sina_Data_Collection/new.log" />
+    <entry file="file://$USER_HOME$/.PyCharm2017.1/system/python_stubs/-313451744/builtins.py" />
+    <entry file="file://C:/ProgramData/Anaconda3/Lib/codecs.py" />
+    <entry file="file://$PROJECT_DIR$/src/demo/Sina_Data_Collection/log/get_comments.log" />
+    <entry file="file://$PROJECT_DIR$/src/demo/Sina_Data_Collection/demo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1450">
+          <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/demo/multi_processing/demo1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="11" lean-forward="false" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/python-skeletons/multiprocessing/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="85" column="8" lean-forward="false" selection-start-line="85" selection-start-column="8" selection-end-line="85" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/demo/web_spammer_detection/__init__.py">
+>>>>>>> 2aa1cf63b01988923fc31f2997d1860df2f47e02
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/demo/scrapy_demo/demo5.py">
+=======
+    <entry file="file://C:/ProgramData/Anaconda3/Lib/threading.py" />
+    <entry file="file://$PROJECT_DIR$/src/myplot/demo2.py">
+>>>>>>> 2aa1cf63b01988923fc31f2997d1860df2f47e02
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/demo/scrapy_demo/demo_01.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1620,6 +1949,71 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/news_projects/papers/demo1.py">
+=======
+    <entry file="file://$PROJECT_DIR$/src/myplot/demo1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="16" column="16" lean-forward="false" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/myplot/demo3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="644">
+          <caret line="29" column="18" lean-forward="false" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#18#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/demo/Sina_Data_Collection/demo2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="33" column="17" lean-forward="false" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/demo/Sina_Data_Collection/collection/hot_news_crawler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="22" column="10" lean-forward="false" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/demo/Sina_Data_Collection/common/util.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1334">
+          <caret line="61" column="36" lean-forward="false" selection-start-line="61" selection-start-column="36" selection-end-line="61" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/demo/Sina_Data_Collection/collection/comments_crawler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="113" column="25" lean-forward="false" selection-start-line="113" selection-start-column="17" selection-end-line="113" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/demo/Sina_Data_Collection/parse/sina_data_parser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3174">
+          <caret line="138" column="4" lean-forward="false" selection-start-line="138" selection-start-column="4" selection-end-line="138" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/demo/web_spammer_detection/qing_gan_fen_xi/data/bad.csv">
+>>>>>>> 2aa1cf63b01988923fc31f2997d1860df2f47e02
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -1629,6 +2023,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/algorithm_demo/The_method_of_programming/demo_page43.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="950">
@@ -1657,10 +2052,47 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21">
           <caret line="2722" column="4" lean-forward="false" selection-start-line="2722" selection-start-column="4" selection-end-line="2722" selection-end-column="4" />
+=======
+    <entry file="file://D:/Program Files/Anaconda3/Lib/site-packages/sklearn/linear_model/logistic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24702">
+          <caret line="1086" column="8" lean-forward="false" selection-start-line="1086" selection-start-column="8" selection-end-line="1086" selection-end-column="8" />
+          <folding>
+            <element signature="e#317#331#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Program Files/Anaconda3/Lib/site-packages/nltk/classify/scikitlearn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="516">
+          <caret line="51" column="8" lean-forward="false" selection-start-line="51" selection-start-column="8" selection-end-line="51" selection-end-column="8" />
+          <folding>
+            <element signature="e#1446#1501#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/demo/web_spammer_detection/qing_gan_fen_xi/京东评论情感分析.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="80" column="48" lean-forward="false" selection-start-line="80" selection-start-column="44" selection-end-line="80" selection-end-column="55" />
+          <folding>
+            <element signature="e#93#112#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/demo/web_spammer_detection/common/util.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="55" column="37" lean-forward="false" selection-start-line="55" selection-start-column="37" selection-end-line="55" selection-end-column="37" />
+>>>>>>> 2aa1cf63b01988923fc31f2997d1860df2f47e02
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/demo/web_spammer_detection/reviews_length/data_length_desc.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2500">
@@ -1677,19 +2109,40 @@
       </provider>
       <provider selected="true" editor-type-id="csv-text-editor">
         <state relative-caret-position="0">
+=======
+    <entry file="file://D:/Program Files/Anaconda3/Lib/site-packages/jpype/_core.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="96" column="4" lean-forward="false" selection-start-line="96" selection-start-column="4" selection-end-line="96" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ml/nlp_demo/hannlp/data/out.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-163">
+>>>>>>> 2aa1cf63b01988923fc31f2997d1860df2f47e02
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/demo/web_spammer_detection/semantic_analysis/demo.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/ml/nlp_demo/hannlp/tokenizer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="22" column="4" lean-forward="false" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+>>>>>>> 2aa1cf63b01988923fc31f2997d1860df2f47e02
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/demo/web_spammer_detection/qing_gan_fen_xi/data/bad.csv">
       <provider editor-type-id="csv-table-editor">
         <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
@@ -1703,11 +2156,25 @@
     <entry file="file://$PROJECT_DIR$/src/demo/web_spammer_detection/qing_gan_fen_xi/京东评论情感分析.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
+=======
+    <entry file="file://$PROJECT_DIR$/src/ml/nlp_demo/hannlp/extract_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="67">
+          <caret line="3" column="52" lean-forward="true" selection-start-line="3" selection-start-column="52" selection-end-line="3" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ml/nlp_demo/hannlp/data/text.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-614">
+>>>>>>> 2aa1cf63b01988923fc31f2997d1860df2f47e02
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$USER_HOME$/.PyCharm2017.1/system/python_stubs/-313451744/fasttext/fasttext.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="186">
@@ -1720,6 +2187,38 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="775">
           <caret line="32" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+=======
+    <entry file="file://$PROJECT_DIR$/src/ml/nlp_demo/hannlp/demo1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ml/nlp_demo/jieba_demo/demo1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#12#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ml/nlp_demo/stanfordnlp/demo1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ml/nlp_demo/textrank/demo1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="7" column="28" lean-forward="true" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+>>>>>>> 2aa1cf63b01988923fc31f2997d1860df2f47e02
           <folding />
         </state>
       </provider>
