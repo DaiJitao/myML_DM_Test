@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b2a4b8e9-6de7-4272-bd39-e4e8a816b613" name="Default" comment="">
+    <list default="true" id="17a9c481-edd5-44ff-8cc9-089154031cb7" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ml/no382_ai/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ml/no382_ai/demo1.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ml/no382_ai/demo2.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ml/no382_ai/text.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ml/no382_ai/text2.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,7 +21,7 @@
     <SUITE FILE_PATH="coverage/myML_DM_Test$util.coverage" NAME="util Coverage Results" MODIFIED="1557376416343" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/demo/Sina_Data_Collection/common" />
     <SUITE FILE_PATH="coverage/myML_DM_Test$demo1__1_.coverage" NAME="demo1 (1) Coverage Results" MODIFIED="1558880395591" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/ml/nlp_demo/textrank" />
     <SUITE FILE_PATH="coverage/myML_DM_Test$comments_crawler.coverage" NAME="comments_crawler Coverage Results" MODIFIED="1557373282135" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/demo/Sina_Data_Collection/collection" />
-    <SUITE FILE_PATH="coverage/myML_DM_Test$demo2.coverage" NAME="demo2 Coverage Results" MODIFIED="1557315462726" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/demo/Sina_Data_Collection" />
+    <SUITE FILE_PATH="coverage/myML_DM_Test$demo2.coverage" NAME="demo2 Coverage Results" MODIFIED="1560058382888" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/ml/no382_ai" />
     <SUITE FILE_PATH="coverage/myML_DM_Test$demo3.coverage" NAME="demo3 Coverage Results" MODIFIED="1557369039076" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/myplot" />
     <SUITE FILE_PATH="coverage/myML_DM_Test$demo.coverage" NAME="demo Coverage Results" MODIFIED="1557286333145" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/demo/Sina_Data_Collection" />
     <SUITE FILE_PATH="coverage/myML_DM_Test$get_comments2__1_.coverage" NAME="get_comments2 (1) Coverage Results" MODIFIED="1557284352419" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/demo/Sina_Data_Collection/collection" />
@@ -25,26 +30,15 @@
     <SUITE FILE_PATH="coverage/myML_DM_Test$sina_data_parser.coverage" NAME="sina_data_parser Coverage Results" MODIFIED="1557379576801" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/demo/Sina_Data_Collection/parse" />
     <SUITE FILE_PATH="coverage/myML_DM_Test$extract_data.coverage" NAME="extract_data Coverage Results" MODIFIED="1558874261197" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/ml/nlp_demo/hannlp" />
     <SUITE FILE_PATH="coverage/myML_DM_Test$demo1.coverage" NAME="demo1 Coverage Results" MODIFIED="1558858003561" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/ml/nlp_demo/jieba_demo" />
+    <SUITE FILE_PATH="coverage/myML_DM_Test$demo1__2_.coverage" NAME="demo1 (2) Coverage Results" MODIFIED="1560068777164" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/ml/no382_ai" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="comments_crawler.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/demo/Sina_Data_Collection/collection/comments_crawler.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2369">
+            <state relative-caret-position="0">
               <caret line="113" column="25" lean-forward="false" selection-start-line="113" selection-start-column="17" selection-end-line="113" selection-end-column="25" />
-              <folding>
-                <element signature="e#0#15#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="hot_news_crawler.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/demo/Sina_Data_Collection/collection/hot_news_crawler.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="22" column="10" lean-forward="false" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
@@ -85,10 +79,22 @@
         </entry>
       </file>
       <file leaf-file-name="demo1.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/ml/nlp_demo/textrank/demo1.py">
+        <entry file="file://$PROJECT_DIR$/src/ml/no382_ai/demo1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="7" column="28" lean-forward="false" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+            <state relative-caret-position="261">
+              <caret line="36" column="32" lean-forward="false" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="demo2.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ml/no382_ai/demo2.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="161">
+              <caret line="7" column="12" lean-forward="true" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -103,39 +109,15 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>newline</find>
-      <find>handle</find>
-      <find>page4009</find>
-      <find>page40</find>
-      <find>time</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/demo/Sina_Data_Collection/get_comments2.py" />
-        <option value="$PROJECT_DIR$/src/demo/Sina_Data_Collection/log/new.log" />
-        <option value="$PROJECT_DIR$/src/demo/Sina_Data_Collection/collection/get_comments2.py" />
-        <option value="$PROJECT_DIR$/src/demo/Sina_Data_Collection/demo.py" />
-        <option value="$PROJECT_DIR$/src/demo/Sina_Data_Collection/demo2.py" />
-        <option value="$PROJECT_DIR$/src/myplot/demo1.py" />
-        <option value="$PROJECT_DIR$/src/myplot/demo3.py" />
-        <option value="$PROJECT_DIR$/src/demo/Sina_Data_Collection/collection/hot_news_crawler.py" />
-        <option value="$PROJECT_DIR$/src/demo/Sina_Data_Collection/collection/comments_crawler.py" />
-        <option value="$PROJECT_DIR$/src/demo/Sina_Data_Collection/common/util.py" />
-        <option value="$PROJECT_DIR$/src/demo/Sina_Data_Collection/parse/sina_data_parser.py" />
-        <option value="$PROJECT_DIR$/src/demo/web_spammer_detection/common/util.py" />
-        <option value="$PROJECT_DIR$/src/ml/nlp_demo/jieba_demo/demo1.py" />
-        <option value="$PROJECT_DIR$/src/ml/nlp_demo/hannlp/demo1.py" />
-        <option value="$PROJECT_DIR$/src/ml/nlp_demo/hannlp/extract_data.py" />
-        <option value="$PROJECT_DIR$/src/ml/nlp_demo/stanfordnlp/demo1.py" />
-        <option value="$PROJECT_DIR$/src/ml/nlp_demo/textrank/demo1.py" />
+        <option value="$PROJECT_DIR$/src/ml/no382_ai/demo2.py" />
+        <option value="$PROJECT_DIR$/src/ml/no382_ai/text2.txt" />
+        <option value="$PROJECT_DIR$/src/ml/no382_ai/demo1.py" />
       </list>
     </option>
   </component>
@@ -145,9 +127,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-10" />
+    <option name="y" value="12" />
     <option name="width" value="1622" />
     <option name="height" value="922" />
   </component>
@@ -166,8 +148,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -198,24 +180,7 @@
               <item name="myML_DM_Test" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="ml" type="462c0819:PsiDirectoryNode" />
-              <item name="nlp_demo" type="462c0819:PsiDirectoryNode" />
-              <item name="hannlp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myML_DM_Test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myML_DM_Test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ml" type="462c0819:PsiDirectoryNode" />
-              <item name="nlp_demo" type="462c0819:PsiDirectoryNode" />
-              <item name="stanfordnlp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myML_DM_Test" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myML_DM_Test" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="ml" type="462c0819:PsiDirectoryNode" />
-              <item name="nlp_demo" type="462c0819:PsiDirectoryNode" />
-              <item name="textrank" type="462c0819:PsiDirectoryNode" />
+              <item name="no382_ai" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -227,14 +192,8 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="F:\pycharm_workspce\myML_DM_Test\src\demo\Sina_Data_Collection\collection" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\pycharm_workspace\myML_DM_Test\src\ml\nlp_demo\hannlp" />
-      <recent name="F:\pycharm_workspace\myML_DM_Test\src\ml\nlp_demo\hannlp\data" />
-      <recent name="F:\pycharm_workspace\myML_DM_Test\src\demo\web_spammer_detection\qing_gan_fen_xi\data" />
-      <recent name="F:\pycharm_workspace\myML_DM_Test\src\demo\web_spammer_detection\qing_gan_fen_xi" />
+      <recent name="F:\pycharm_workspace\myML_DM_Test\src\ml\no382_ai" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -249,7 +208,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.demo1 (1)">
+  <component name="RunManager" selected="Python.demo1 (2)">
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-interpreter>project</node-interpreter>
       <node-options />
@@ -416,6 +375,24 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
+    <configuration name="demo1 (2)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/ml/no382_ai" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="myML_DM_Test" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/ml/no382_ai/demo1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
     <configuration name="demo1" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -430,6 +407,24 @@
       <module name="myML_DM_Test" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/ml/nlp_demo/jieba_demo/demo1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="demo2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/ml/no382_ai" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="myML_DM_Test" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/ml/no382_ai/demo2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -452,56 +447,20 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="sina_data_parser" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/demo/Sina_Data_Collection/parse" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="myML_DM_Test" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/demo/Sina_Data_Collection/parse/sina_data_parser.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
-    <configuration name="util (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/demo/web_spammer_detection/common" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="myML_DM_Test" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/demo/web_spammer_detection/common/util.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-    </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.sina_data_parser" />
-      <item index="1" class="java.lang.String" itemvalue="Python.util (1)" />
-      <item index="2" class="java.lang.String" itemvalue="Python.demo1" />
-      <item index="3" class="java.lang.String" itemvalue="Python.extract_data" />
-      <item index="4" class="java.lang.String" itemvalue="Python.demo1 (1)" />
+      <item index="0" class="java.lang.String" itemvalue="Python.demo1" />
+      <item index="1" class="java.lang.String" itemvalue="Python.extract_data" />
+      <item index="2" class="java.lang.String" itemvalue="Python.demo1 (1)" />
+      <item index="3" class="java.lang.String" itemvalue="Python.demo1 (2)" />
+      <item index="4" class="java.lang.String" itemvalue="Python.demo2" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.demo1 (1)" />
-        <item index="1" class="java.lang.String" itemvalue="Python.extract_data" />
-        <item index="2" class="java.lang.String" itemvalue="Python.demo1" />
-        <item index="3" class="java.lang.String" itemvalue="Python.util (1)" />
-        <item index="4" class="java.lang.String" itemvalue="Python.sina_data_parser" />
+        <item index="0" class="java.lang.String" itemvalue="Python.demo1 (2)" />
+        <item index="1" class="java.lang.String" itemvalue="Python.demo2" />
+        <item index="2" class="java.lang.String" itemvalue="Python.demo1 (1)" />
+        <item index="3" class="java.lang.String" itemvalue="Python.extract_data" />
+        <item index="4" class="java.lang.String" itemvalue="Python.demo1" />
       </list>
     </recent_temporary>
   </component>
@@ -510,7 +469,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="b2a4b8e9-6de7-4272-bd39-e4e8a816b613" name="Default" comment="" />
+      <changelist id="17a9c481-edd5-44ff-8cc9-089154031cb7" name="Default" comment="" />
       <created>1557134687865</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -604,27 +563,27 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1618" height="870" extended-state="7" />
+    <frame x="-9" y="-9" width="1618" height="870" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20725389" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1126943" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29013255" sideWeight="0.5051814" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283767" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32547864" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45360824" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.6818851" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25453368" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4108984" sideWeight="0.49481866" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18878248" sideWeight="0.49481866" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3991323" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39027983" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329718" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3991323" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -658,28 +617,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/.PyCharm2017.1/system/python_stubs/-313451744/builtins.py" />
-    <entry file="file://$PROJECT_DIR$/src/demo/multi_processing/demo1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="5" column="11" lean-forward="false" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/demo/Sina_Data_Collection/common/util.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="8" column="16" lean-forward="true" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/demo/Sina_Data_Collection/collection/multiThread_demo.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/demo/multi_processing/demo1.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
@@ -837,7 +774,7 @@
         <state relative-caret-position="483">
           <caret line="22" column="10" lean-forward="false" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
           <folding>
-            <element signature="e#0#15#0" expanded="true" />
+            <element signature="e#0#15#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -851,7 +788,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/demo/Sina_Data_Collection/collection/comments_crawler.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2369">
+        <state relative-caret-position="0">
           <caret line="113" column="25" lean-forward="false" selection-start-line="113" selection-start-column="17" selection-end-line="113" selection-end-column="25" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
@@ -967,6 +904,40 @@
         <state relative-caret-position="92">
           <caret line="7" column="28" lean-forward="false" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ml/no382_ai/text2.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="443">
+          <caret line="205" column="52" lean-forward="false" selection-start-line="205" selection-start-column="52" selection-end-line="205" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ml/no382_ai/text.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ml/no382_ai/demo2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="12" lean-forward="true" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ml/no382_ai/demo1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="36" column="32" lean-forward="false" selection-start-line="36" selection-start-column="32" selection-end-line="36" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
