@@ -28,6 +28,5 @@ def demo():
     ftag.close()
 
 
-demo()
 nlp_en.close()  # Do not forget to close! The backend server will consume a lot memery
 nlp_zh.close()  #
