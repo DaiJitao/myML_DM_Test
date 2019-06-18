@@ -32,10 +32,10 @@ def cut(file="text.txt"):
     return res
 
 
-# 1.2n元语法模型的生成
+# 1.2 n元语法模型的生成
 # ngram
 def generate_ngram(sentence, n=7, m=2):
-    """ n元模型  """
+    """ n元模型  m最小值"""
     if len(sentence) < n:
         n = len(sentence)
     result = [tuple(sentence[i - k: i]) for k in range(m, n + 1) for i in range(k, len(sentence) + 1)]
@@ -46,10 +46,10 @@ def generate_ngram(sentence, n=7, m=2):
 
 def extract_frequence_phrases():
     ''' 提取高频短语 '''
-    d = [line.strip() for line in open("text.txt", encoding='utf-8', mode='r')
+    data = [line.strip() for line in open("text.txt", encoding='utf-8', mode='r')
          if "RESUMEDOCSSTARTFLAG" not in line and len(line.strip()) > 0]
 
-    data = [generate_ngram(sentence) for sentence in cut("text2.txt")] # file read
+    # data = [generate_ngram(sentence) for sentence in cut("text2.txt")] # file read 分词
     doc_words = []
     words_set = set()
     words = []
