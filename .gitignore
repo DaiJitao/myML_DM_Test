@@ -40,5 +40,4 @@ target-eclipse
 .project
 *.class
 .idea/
-.idea/workspace.xml
-
+workspace.xml
