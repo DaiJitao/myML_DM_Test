@@ -39,8 +39,8 @@ def generate_ngram(sentence, n=7, m=2):
     if len(sentence) < n:
         n = len(sentence)
     result = [tuple(sentence[i - k: i]) for k in range(m, n + 1) for i in range(k, len(sentence) + 1)]
-    result = [item for item in result if len("".join(item).strip()) > 1 and
-              len(pattern.findall("".join(item).strip())) == 0]
+    result = [item for item in result if
+              len("".join(item).strip()) > 1 and len(pattern.findall("".join(item).strip())) == 0]
     return result
 
 
@@ -69,3 +69,5 @@ def extract_frequence_phrases():
     print(d)
 
 extract_frequence_phrases()
+
+list.sort()

@@ -19,7 +19,25 @@ def download(url, num_retries = 2):
 
 html = download("http://www.baidu.com", 2)
 
+# from bs4 import BeautifulSoup
+# bsObj = BeautifulSoup(html.read())
+# print(bsObj.head.link)
 
-from bs4 import BeautifulSoup
-bsObj = BeautifulSoup(html.read())
-print(bsObj.head.link)
+html = download("")
+
+http: // localhost: 8086 / sentimentPloarity / sentimentPloarityCar?taskData = {
+	"taskId": "S:20190614121212334:3212",
+	"count": 2,
+	"data": [
+		{
+			"assetId": "4378847782428538",
+			"siteId": "",
+			"siteName": "",
+			"channelId": "",
+			"channel": "",
+			"title": "",
+			"content": "中文文本内容",
+			"infoType": ""
+		}
+	]
+}
