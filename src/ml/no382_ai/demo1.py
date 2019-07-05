@@ -42,7 +42,7 @@ def cut(file="text.txt"):
 
 # 1.2 n元语法模型的生成
 # ngram
-def generate_ngram(sentence, n=10, m=2):
+def generate_ngram(sentence, n=10, m=3):
     """ n元模型  m最小值"""
     if len(sentence) < n:
         n = len(sentence)
@@ -57,7 +57,7 @@ def extract_frequence_phrases():
     # data = [line.strip() for line in open("text.txt", encoding='utf-8', mode='r')
     #      if "RESUMEDOCSSTARTFLAG" not in line and len(line.strip()) > 0]
 
-    data = [generate_ngram(sentence) for sentence in cut("text3.txt")]  # file read 分词
+    data = [generate_ngram(sentence) for sentence in cut("test4.txt")]  # file read 分词
     print(data)
     duan_yu_all = []
     words_set = set()
