@@ -42,7 +42,7 @@ def cut(file="text.txt"):
 
 # 1.2 n元语法模型的生成
 # ngram
-def generate_ngram(sentence, n=7, m=2):
+def generate_ngram(sentence, n=10, m=2):
     """ n元模型  m最小值"""
     if len(sentence) < n:
         n = len(sentence)
@@ -70,15 +70,15 @@ def extract_frequence_phrases():
             words.append(word)
 
     # 统计每一个词的频次
-    print(words_set)
-    print("words:", words)
-    print("words总长度：", len(words))
-    # print(words.count('快速消费品'))
-    d = Counter(words).most_common()  # 提取前五十个 统计词频
-    print(len(d))
-    print("前X个词语：", d)
-    print("所有的短语", duan_yu_all)
-    print(words)
+    # print(words_set)
+    # print("words:", words)
+    # print("words总长度：", len(words))
+    # # print(words.count('快速消费品'))
+    # d = Counter(words).most_common()  # 提取前五十个 统计词频
+    # print(len(d))
+    # print("前X个词语：", d)
+    # print("所有的短语", duan_yu_all)
+    # print(words)
     # 下载中心词
     center_words = load_center_words("center_word.txt")
     #
@@ -94,6 +94,7 @@ def extract_frequence_phrases():
 
     d = Counter(res_word).most_common()
     print(d)
+    print(len(d))
 
 
 extract_frequence_phrases()
