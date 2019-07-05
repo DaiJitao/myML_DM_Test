@@ -2,6 +2,14 @@ import re
 import jieba
 from collections import Counter
 
+
+def load_center_words(file):
+    data = []
+    with open(file, mode="r", encoding="utf-8") as content:
+        for line in content.readlines():
+            data = data + line.strip().split(" ")
+    return set(data)
+
 # ***********************************************************************
 # 车漆很薄
 #
@@ -38,36 +46,54 @@ def generate_ngram(sentence, n=7, m=2):
     """ n元模型  m最小值"""
     if len(sentence) < n:
         n = len(sentence)
-    result = [tuple(sentence[i - k: i]) for k in range(m, n + 1) for i in range(k, len(sentence) + 1)]
-    result = [item for item in result if
-              len("".join(item).strip()) > 1 and len(pattern.findall("".join(item).strip())) == 0]
+    temp = [tuple(sentence[i - k: i]) for k in range(m, n + 1) for i in range(k, len(sentence) + 1)]  # 产生n元词语
+    result = [item for item in temp if
+              len("".join(item).strip()) > 1 and len(pattern.findall("".join(item).strip())) == 0]  # 去除非中文
     return result
 
 
 def extract_frequence_phrases():
     ''' 提取高频短语 '''
-    data = [line.strip() for line in open("text.txt", encoding='utf-8', mode='r')
-         if "RESUMEDOCSSTARTFLAG" not in line and len(line.strip()) > 0]
+    # data = [line.strip() for line in open("text.txt", encoding='utf-8', mode='r')
+    #      if "RESUMEDOCSSTARTFLAG" not in line and len(line.strip()) > 0]
 
-    # data = [generate_ngram(sentence) for sentence in cut("text2.txt")] # file read 分词
-    doc_words = []
+    data = [generate_ngram(sentence) for sentence in cut("text3.txt")]  # file read 分词
+    print(data)
+    duan_yu_all = []
     words_set = set()
     words = []
     for i in data:
-        d = ["".join(t).strip() for t in i]
-        doc_words.append(d)
-        for word in d:
+        duan_yu = ["".join(t).strip() for t in i]  # 把词语合并成短语
+        duan_yu_all.append(duan_yu)
+        for word in duan_yu:
             words_set.add(word)
             words.append(word)
 
     # 统计每一个词的频次
     print(words_set)
-    print(words)
-    print(words.count('快速消费品'))
-    d = Counter(words).most_common(90) #提取前五十个
+    print("words:", words)
+    print("words总长度：", len(words))
+    # print(words.count('快速消费品'))
+    d = Counter(words).most_common()  # 提取前五十个 统计词频
     print(len(d))
+    print("前X个词语：", d)
+    print("所有的短语", duan_yu_all)
+    print(words)
+    # 下载中心词
+    center_words = load_center_words("center_word.txt")
+    #
+    duan_yu_all2 = []
+    for i in duan_yu_all:
+        duan_yu_all2 = duan_yu_all2 + i
+    print("2", duan_yu_all2)
+    res_word = []
+    for word in duan_yu_all2:
+        for c in center_words:
+            if c in word:
+                res_word.append(word)
+
+    d = Counter(res_word).most_common()
     print(d)
 
-extract_frequence_phrases()
 
-list.sort()
+extract_frequence_phrases()
