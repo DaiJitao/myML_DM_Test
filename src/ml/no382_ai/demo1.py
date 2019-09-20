@@ -54,10 +54,10 @@ def generate_ngram(sentence, n=10, m=3):
 
 def extract_frequence_phrases():
     ''' 提取高频短语 '''
-    # data = [line.strip() for line in open("text.txt", encoding='utf-8', mode='r')
+    # data = [line.strip() for line in open("test4.txt", encoding='utf-8', mode='r')
     #      if "RESUMEDOCSSTARTFLAG" not in line and len(line.strip()) > 0]
 
-    data = [generate_ngram(sentence) for sentence in cut("test4.txt")]  # file read 分词
+    data = [generate_ngram(sentence) for sentence in cut("text3.txt")]  # file read 分词
     print(data)
     duan_yu_all = []
     words_set = set()
@@ -96,5 +96,4 @@ def extract_frequence_phrases():
     print(d)
     print(len(d))
 
-
-extract_frequence_phrases()
+# extract_frequence_phrases()
