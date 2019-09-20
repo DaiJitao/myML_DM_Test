@@ -19,12 +19,12 @@ import time
 
 value_fromstation = '%u5317%u4EAC%u897F%2CBXP'  # 始发站（北京西）
 value_tostation = '%u77F3%u5BB6%u5E84%2CSJP'  # 终点站（石家庄）
-value_date = '2018-02-11'  # 出发时间
+value_date = '2019-10-1'  # 出发时间
 
 
 def login_proc(username, password):
-    # 打开登录页面
-    sel = webdriver.Chrome('C:\Program Files (x86)\Google\Chrome\Application\chromedriver.exe')
+    # 打开登录页面 'C:\Program Files (x86)\Google\Chrome\Application\chromedriver.exe'
+    sel = webdriver.Chrome()
     # sel=webdriver.Firefox()
     sel.implicitly_wait(30)
     login_url = 'https://kyfw.12306.cn/otn/login/init'
@@ -187,6 +187,6 @@ if __name__ == '__main__':
     refresh_interval = 0.5
     timer = False
 
-    sel = login_proc('12306登录账号', '你自己的密码')
+    sel = login_proc('19910781498', '你自己的密码')
     search_proc(sel, train_type, timer)
     book_proc(sel, refresh_interval)
